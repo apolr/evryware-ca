@@ -5,22 +5,22 @@ import { Card, CardContent } from "@/components/ui/card";
 const PortfolioSection = () => {
   const projects = [
     {
-      title: "Healthcare Management System",
-      category: "Web Application",
-      description: "Streamlined patient management for a local clinic",
-      image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=400&h=225&fit=crop&crop=center"
+      title: "Hamilton Black Health Community Leaders Forum",
+      category: "Community Organization",
+      description: "Event coordination and community engagement platform for health initiatives",
+      image: "/lovable-uploads/faed6047-9b8d-4325-826f-38a34c94b229.png"
     },
     {
-      title: "E-commerce Platform",
-      category: "Online Store", 
-      description: "Custom shopping experience for artisan marketplace",
-      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=225&fit=crop&crop=center"
+      title: "À La Carte Cleaning Services",
+      category: "Service Business", 
+      description: "Professional cleaning service booking and management system",
+      image: "/lovable-uploads/2e18a537-fa0a-4e06-8f3e-2a821a2778ab.png"
     },
     {
-      title: "Event Management Portal",
-      category: "Non-Profit",
-      description: "Registration and coordination system for community events",
-      image: "https://images.unsplash.com/photo-1511578314322-379afb476865?w=400&h=225&fit=crop&crop=center"
+      title: "Nigerian Students Association Hamilton",
+      category: "Non-Profit Organization",
+      description: "Community platform celebrating Nigerian culture and student connections",
+      image: "/lovable-uploads/b0705b9c-c072-4e0b-a4e1-c2c1c67d7cdb.png"
     }
   ];
 
