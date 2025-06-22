@@ -354,7 +354,7 @@ const Index = () => {
 
       {/* Contact Section */}
       <section id="contact" className="py-20 relative" style={{
-        backgroundImage: `url('/lovable-uploads/71758231-fc2d-4b27-8cd1-f41e873e2bcc.png')`,
+        backgroundImage: `url('/lovable-uploads/f025ab89-dee6-48a0-8e94-99d7dda60936.png')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat'
