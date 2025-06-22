@@ -353,37 +353,45 @@ const Index = () => {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-20 bg-evryware text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section id="contact" className="py-20 relative" style={{
+        backgroundImage: `url('/lovable-uploads/71758231-fc2d-4b27-8cd1-f41e873e2bcc.png')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}>
+        {/* Grey overlay for text legibility */}
+        <div className="absolute inset-0 bg-gray-600/30"></div>
+        
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-semibold mb-4">Get In Touch</h2>
-            <p className="text-xl opacity-90">
+            <h2 className="text-4xl font-semibold mb-4 text-white">Get In Touch</h2>
+            <p className="text-xl text-white/90">
               Ready to start your next project? Let's discuss how we can help.
             </p>
           </div>
           
           <div className="grid md:grid-cols-2 gap-12">
             <div>
-              <h3 className="text-2xl font-semibold mb-6">Contact Us</h3>
+              <h3 className="text-2xl font-semibold mb-6 text-white">Contact Us</h3>
               <div className="space-y-4">
                 <div className="flex items-center">
-                  <Mail className="h-5 w-5 mr-3" />
-                  <span>hello@evryware.ca</span>
+                  <Mail className="h-5 w-5 mr-3 text-white" />
+                  <span className="text-white">hello@evryware.ca</span>
                 </div>
                 <div className="flex items-center">
-                  <Phone className="h-5 w-5 mr-3" />
-                  <span>+1 (437) 556-4546</span>
+                  <Phone className="h-5 w-5 mr-3 text-white" />
+                  <span className="text-white">+1 (437) 556-4546</span>
                 </div>
                 <div className="flex items-center">
-                  <MapPin className="h-5 w-5 mr-3" />
-                  <span>Ontario, Canada</span>
+                  <MapPin className="h-5 w-5 mr-3 text-white" />
+                  <span className="text-white">Ontario, Canada</span>
                 </div>
               </div>
             </div>
             
             <div>
-              <h3 className="text-2xl font-semibold mb-6">Let's do Business</h3>
-              <p className="opacity-90 mb-6">
+              <h3 className="text-2xl font-semibold mb-6 text-white">Let's do Business</h3>
+              <p className="text-white/90 mb-6">
                 Whether you're a business looking to modernize your operations or a non-profit 
                 seeking to amplify your impact, we're here to help you find the right solution.
               </p>
