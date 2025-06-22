@@ -98,10 +98,7 @@ const Index = () => {
             <p className="text-xl md:text-2xl text-gray-600 mb-8 font-medium">
               simple . smart . solutions
             </p>
-            <p className="text-lg text-gray-700 mb-12 max-w-2xl mx-auto">
-              Ontario-based technology consultancy partnering with businesses and non-profits 
-              to deliver straightforward, intelligent digital solutions that work.
-            </p>
+            <p className="text-lg text-gray-700 mb-12 max-w-2xl mx-auto">A technology company working with businesses and non-profits to deliver straightforward, intelligent digital solutions that work.</p>
             <Button onClick={() => scrollToSection('contact')} className="bg-evryware hover:bg-evryware-dark text-white px-8 py-3 text-lg group">
               Get Started
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
