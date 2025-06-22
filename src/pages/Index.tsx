@@ -365,7 +365,23 @@ const Index = () => {
             </p>
           </div>
           
-          <div className="grid md:grid-cols-2 gap-12">
+          <div className="grid md:grid-cols-3 gap-8 lg:gap-12">
+            {/* Google Maps Widget */}
+            <div className="w-full">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d186419.5734923671!2d-79.97624385000001!3d43.2557!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882c986c27de778f%3A0x3031c3f4430d0d0a!2sHamilton%2C%20ON%2C%20Canada!5e0!3m2!1sen!2sus!4v1703344800000!5m2!1sen!2sus"
+                width="100%"
+                height="300"
+                style={{ border: 0, borderRadius: '8px' }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Hamilton, Ontario Location"
+                className="shadow-lg"
+              ></iframe>
+            </div>
+            
+            {/* Contact Us */}
             <div>
               <h3 className="text-2xl font-semibold mb-6 text-white">Contact Us</h3>
               <div className="space-y-4">
@@ -384,6 +400,7 @@ const Index = () => {
               </div>
             </div>
             
+            {/* Let's do Business */}
             <div>
               <h3 className="text-2xl font-semibold mb-6 text-white">Let's do Business</h3>
               <p className="text-white/90 mb-6">
