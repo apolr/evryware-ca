@@ -181,7 +181,7 @@ const Index = () => {
 
       {/* Services Section */}
       <section id="services" className="py-20 relative" style={{
-        backgroundImage: `url('/lovable-uploads/42a681e7-5fb4-4d99-b0c8-8081f6db1668.png')`,
+        backgroundImage: `url('/lovable-uploads/a7c74e80-1f65-4a7a-ada4-0a9547e9dfb5.png')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat'
