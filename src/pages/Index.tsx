@@ -408,7 +408,7 @@ const Index = () => {
                 seeking to amplify your impact, we're here to help you find the right solution.
               </p>
               <Button className="bg-white text-evryware hover:bg-gray-100 px-8 py-3 text-lg group">
-                Schedule a Consultation
+                Get a free Consultation
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </Button>
             </div>
