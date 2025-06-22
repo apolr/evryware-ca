@@ -223,8 +223,8 @@ const Index = () => {
             title: "Data Analytics",
             description: "Transform your data into actionable insights and reports"
           }, {
-            title: "Cloud Solutions",
-            description: "Scalable cloud infrastructure and migration services"
+            title: "Project Management & Consulting",
+            description: "Agile/Scrum and PMI-certified guidance for on-time delivery"
           }, {
             title: "Support & Maintenance",
             description: "Ongoing support to keep your systems running smoothly"
