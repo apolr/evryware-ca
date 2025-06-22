@@ -1,8 +1,11 @@
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
+
 const ProductsSection = () => {
-  return <section id="products" className="py-20 bg-white">
+  return (
+    <section id="products" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-semibold text-evryware mb-4">Our Products</h2>
@@ -24,9 +27,11 @@ const ProductsSection = () => {
                 Comprehensive platform combining CRM, project management, and financial tracking 
                 designed specifically for small to medium businesses.
               </p>
-              <Button variant="outline" className="border-evryware text-evryware hover:bg-evryware hover:text-white">
-                Learn More
-              </Button>
+              <a href="https://www.askpreye.com" target="_blank" rel="noopener noreferrer">
+                <Button variant="outline" className="border-evryware text-evryware hover:bg-evryware hover:text-white">
+                  Learn More
+                </Button>
+              </a>
             </CardContent>
           </Card>
           
@@ -49,6 +54,8 @@ const ProductsSection = () => {
           </Card>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default ProductsSection;
