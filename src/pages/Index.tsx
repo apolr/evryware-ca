@@ -94,13 +94,13 @@ const Index = () => {
 
       {/* Hero Section */}
       <section id="hero" className="pt-16 min-h-screen flex items-center justify-center relative" style={{
-      backgroundImage: `url('/lovable-uploads/6a88e9b1-cc21-42e6-9a39-0598ed92cf6a.png')`,
+      backgroundImage: `url('/lovable-uploads/3d982da9-686c-4030-8aac-3fb7a2770238.png')`,
       backgroundSize: 'cover',
       backgroundPosition: 'center',
       backgroundRepeat: 'no-repeat'
     }}>
         {/* Dark overlay for text legibility */}
-        <div className="absolute inset-0 bg-black/40"></div>
+        <div className="absolute inset-0 bg-black/50"></div>
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
           <div className="animate-fade-in">
@@ -181,13 +181,13 @@ const Index = () => {
 
       {/* Services Section */}
       <section id="services" className="py-20 relative" style={{
-        backgroundImage: `url('/lovable-uploads/9e4cd242-a70f-4ce3-b43f-0bc946eaeb86.png')`,
+        backgroundImage: `url('/lovable-uploads/3d982da9-686c-4030-8aac-3fb7a2770238.png')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat'
       }}>
         {/* Dark overlay for text legibility */}
-        <div className="absolute inset-0 bg-black/60"></div>
+        <div className="absolute inset-0 bg-black/70"></div>
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-16">
