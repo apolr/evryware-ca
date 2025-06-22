@@ -14,20 +14,20 @@ const AboutSection = () => {
         <div className="grid md:grid-cols-3 gap-8">
           <Card className="border-none shadow-lg hover:shadow-xl transition-shadow">
             <CardContent className="p-8 text-center">
-              <Code className="h-12 w-12 text-evryware mx-auto mb-4" />
-              <h3 className="text-xl font-semibold mb-4">Simple</h3>
+              <Lightbulb className="h-12 w-12 text-evryware mx-auto mb-4" />
+              <h3 className="text-xl font-semibold mb-4">Smart</h3>
               <p className="text-gray-600">
-                We cut through complexity to deliver solutions that are intuitive and easy to use.
+                Intelligent design and strategic thinking drive every project we undertake.
               </p>
             </CardContent>
           </Card>
           
           <Card className="border-none shadow-lg hover:shadow-xl transition-shadow">
             <CardContent className="p-8 text-center">
-              <Lightbulb className="h-12 w-12 text-evryware mx-auto mb-4" />
-              <h3 className="text-xl font-semibold mb-4">Smart</h3>
+              <Code className="h-12 w-12 text-evryware mx-auto mb-4" />
+              <h3 className="text-xl font-semibold mb-4">Simple</h3>
               <p className="text-gray-600">
-                Intelligent design and strategic thinking drive every project we undertake.
+                We cut through complexity to deliver solutions that are intuitive and easy to use.
               </p>
             </CardContent>
           </Card>
