@@ -343,7 +343,7 @@ const Index = () => {
                 </div>
                 <div className="flex items-center">
                   <MapPin className="h-5 w-5 mr-3" />
-                  <span>Toronto, Ontario, Canada</span>
+                  <span>Ontario, Canada</span>
                 </div>
               </div>
             </div>
