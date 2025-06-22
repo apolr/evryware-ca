@@ -1,0 +1,57 @@
+
+import { Star } from 'lucide-react';
+import { Card, CardContent } from "@/components/ui/card";
+
+const TestimonialsSection = () => {
+  const testimonials = [
+    {
+      name: "Sarah Mitchell",
+      company: "Green Valley Non-Profit",
+      quote: "Evryware transformed our donor management process. What used to take hours now takes minutes. Their solution is exactly what we needed - simple yet powerful."
+    },
+    {
+      name: "Mark Thompson",
+      company: "Thompson Manufacturing",
+      quote: "The team at Evryware didn't just build us software, they became our technology partners. They understand our business and deliver solutions that actually work."
+    },
+    {
+      name: "Lisa Chen",
+      company: "Ontario Medical Clinic",
+      quote: "Professional, responsive, and results-driven. Evryware delivered our patient management system on time and within budget. Highly recommended."
+    }
+  ];
+
+  return (
+    <section id="testimonials" className="py-20 bg-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl font-semibold text-evryware mb-4">Client Testimonials</h2>
+          <p className="text-xl text-gray-600">
+            What our partners say about working with us
+          </p>
+        </div>
+        
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {testimonials.map((testimonial, index) => (
+            <Card key={index} className="border-none shadow-lg">
+              <CardContent className="p-6">
+                <div className="flex mb-4">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+                  ))}
+                </div>
+                <p className="text-gray-600 mb-4 italic">"{testimonial.quote}"</p>
+                <div>
+                  <p className="font-semibold text-evryware">{testimonial.name}</p>
+                  <p className="text-sm text-gray-500">{testimonial.company}</p>
+                </div>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default TestimonialsSection;
