@@ -294,19 +294,7 @@ const Index = () => {
             title: "Event Management Portal",
             category: "Non-Profit",
             description: "Registration and coordination system for community events"
-          }, {
-            title: "Financial Dashboard",
-            category: "Analytics",
-            description: "Real-time reporting for investment management firm"
-          }, {
-            title: "Learning Management System",
-            category: "Education",
-            description: "Online training platform for corporate clients"
-          }, {
-            title: "Inventory Tracking",
-            category: "Operations",
-            description: "Automated stock management for manufacturing company"
-          }].map((project, index) => <Card key={index} className="border-none shadow-lg hover:shadow-xl transition-shadow group cursor-pointer bg-white/95 backdrop-blur-sm">
+          },].map((project, index) => <Card key={index} className="border-none shadow-lg hover:shadow-xl transition-shadow group cursor-pointer bg-white/95 backdrop-blur-sm">
                 <CardContent className="p-6">
                   <div className="h-32 bg-gradient-to-br from-gray-100 to-gray-200 rounded-lg mb-4 flex items-center justify-center">
                     <Code className="h-8 w-8 text-gray-400" />
