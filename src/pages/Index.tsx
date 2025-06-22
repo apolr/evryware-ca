@@ -1,6 +1,6 @@
 
 import { useState, useEffect } from 'react';
-import { Menu, X, ArrowRight, Code, Users, Lightbulb, Star, Mail, Phone, MapPin, Globe, Search, Bot, Target, Palette, ShoppingCart } from 'lucide-react';
+import { Menu, X, ArrowRight, Code, Users, Lightbulb, Star, Mail, Phone, MapPin } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 
@@ -44,39 +44,6 @@ const Index = () => {
     { id: 'portfolio', label: 'Portfolio' },
     { id: 'testimonials', label: 'Testimonials' },
     { id: 'contact', label: 'Contact' },
-  ];
-
-  const services = [
-    {
-      icon: Globe,
-      title: "Web & App Development",
-      description: "Custom websites, web apps, and MVP prototypes aligned with your goals."
-    },
-    {
-      icon: Search,
-      title: "Digital Marketing & SEO",
-      description: "Data-driven campaigns and on-site SEO to boost visibility."
-    },
-    {
-      icon: Bot,
-      title: "AI-Powered Solutions", 
-      description: "Intelligent automation and AI integrations."
-    },
-    {
-      icon: Target,
-      title: "Project Management & Consulting",
-      description: "Agile/Scrum and PMI-certified guidance for on-time delivery."
-    },
-    {
-      icon: Palette,
-      title: "Creative Design & Branding",
-      description: "Logos, flyers, social media kits, brand voice guides."
-    },
-    {
-      icon: ShoppingCart,
-      title: "E-commerce & Marketplace Platforms",
-      description: "End-to-end setups with payment integrations and vendor portals."
-    }
   ];
 
   return (
@@ -139,61 +106,25 @@ const Index = () => {
       </header>
 
       {/* Hero Section */}
-      <section id="hero" className="pt-16 min-h-screen bg-white relative overflow-hidden">
-        {/* Subtle background pattern */}
-        <div className="absolute inset-0 opacity-5">
-          <div className="absolute inset-0" style={{
-            backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23000000' fill-opacity='0.1'%3E%3Ccircle cx='30' cy='30' r='1'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
-          }} />
-        </div>
-        
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 relative z-10">
-          <div className="text-center mb-16 animate-fade-in">
+      <section id="hero" className="pt-16 min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 to-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <div className="animate-fade-in">
             <h1 className="font-orbitron text-5xl md:text-7xl font-semibold text-evryware mb-6 lowercase">
               evryware
             </h1>
-            <p className="text-xl md:text-2xl text-gray-600 mb-12 font-medium">
+            <p className="text-xl md:text-2xl text-gray-600 mb-8 font-medium">
               simple . smart . solutions
             </p>
-          </div>
-
-          {/* Bento Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12 max-w-5xl mx-auto">
-            {services.map((service, index) => {
-              const IconComponent = service.icon;
-              return (
-                <Card key={index} className="border-none shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 bg-white">
-                  <CardContent className="p-6 h-full flex flex-col">
-                    <div className="flex items-center justify-center w-12 h-12 bg-evryware/10 rounded-lg mb-4">
-                      <IconComponent className="h-6 w-6 text-evryware" />
-                    </div>
-                    <h3 className="text-lg font-semibold text-evryware mb-3 leading-tight">
-                      {service.title}
-                    </h3>
-                    <p className="text-gray-600 text-sm flex-grow">
-                      {service.description}
-                    </p>
-                  </CardContent>
-                </Card>
-              );
-            })}
-          </div>
-
-          {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <p className="text-lg text-gray-700 mb-12 max-w-2xl mx-auto">
+              Ontario-based technology consultancy partnering with businesses and non-profits 
+              to deliver straightforward, intelligent digital solutions that work.
+            </p>
             <Button 
               onClick={() => scrollToSection('contact')}
               className="bg-evryware hover:bg-evryware-dark text-white px-8 py-3 text-lg group"
             >
-              Get a Free Consultation
+              Get Started
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-            </Button>
-            <Button 
-              onClick={() => scrollToSection('products')}
-              variant="outline"
-              className="border-evryware text-evryware hover:bg-evryware hover:text-white px-8 py-3 text-lg"
-            >
-              Our Products
             </Button>
           </div>
         </div>
