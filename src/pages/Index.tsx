@@ -249,7 +249,7 @@ const Index = () => {
             
             <Card className="border-none shadow-lg">
               <CardContent className="p-8">
-                <h3 className="text-2xl font-semibold mb-4 text-evryware">Non-Profit Connect</h3>
+                <h3 className="text-2xl font-semibold mb-4 text-evryware">Kommunity</h3>
                 <p className="text-gray-600 mb-6">
                   Donor management and volunteer coordination system built to help non-profits 
                   maximize their impact and streamline operations.
