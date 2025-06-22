@@ -94,7 +94,7 @@ const Index = () => {
       <section id="hero" className="pt-16 min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="animate-fade-in">
-            <h1 className="font-orbitron text-5xl md:text-7xl font-semibold text-evryware mb-6 lowercase">simple . smart . solutions</h1>
+            <h1 className="font-orbitron text-5xl font-semibold text-evryware mb-6 lowercase md:text-6xl">simple . smart . solutions</h1>
             
             <p className="text-lg text-gray-700 mb-12 max-w-2xl mx-auto">A technology company working with businesses and non-profits to deliver straightforward, intelligent digital solutions that work.</p>
             <Button onClick={() => scrollToSection('contact')} className="bg-evryware hover:bg-evryware-dark text-white px-8 py-3 text-lg group">
