@@ -2,12 +2,9 @@ import { useState, useEffect } from 'react';
 import { Menu, X, ArrowRight, Code, Users, Lightbulb, Star, Mail, Phone, MapPin } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
-
 const Index = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('hero');
-
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -17,7 +14,6 @@ const Index = () => {
     }
     setIsMenuOpen(false);
   };
-
   useEffect(() => {
     const handleScroll = () => {
       const sections = ['hero', 'about', 'services', 'products', 'portfolio', 'testimonials', 'contact'];
@@ -39,7 +35,6 @@ const Index = () => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
-
   const navItems = [{
     id: 'about',
     label: 'About'
@@ -59,7 +54,6 @@ const Index = () => {
     id: 'contact',
     label: 'Contact'
   }];
-
   return <div className="min-h-screen bg-white font-fira">
       {/* Sticky Header */}
       <header className="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm border-b border-gray-100 z-50">
@@ -355,30 +349,10 @@ const Index = () => {
                 Whether you're a business looking to modernize your operations or a non-profit 
                 seeking to amplify your impact, we're here to help you find the right solution.
               </p>
-              <Dialog>
-                <DialogTrigger asChild>
-                  <Button className="bg-white text-evryware hover:bg-gray-100 px-8 py-3 text-lg group">
-                    Schedule a Consultation
-                    <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-                  </Button>
-                </DialogTrigger>
-                <DialogContent className="sm:max-w-md">
-                  <DialogHeader>
-                    <DialogTitle>Schedule a Consultation</DialogTitle>
-                  </DialogHeader>
-                  <div className="text-center py-4">
-                    <p className="mb-4 text-gray-600">
-                      Ready to discuss your project? Book a 30-minute consultation with our team.
-                    </p>
-                    <Button asChild className="bg-evryware hover:bg-evryware-dark text-white">
-                      <a href="https://calendly.com/hello-evryware/30min" target="_blank" rel="noopener noreferrer">
-                        Open Calendly
-                        <ArrowRight className="ml-2 h-4 w-4" />
-                      </a>
-                    </Button>
-                  </div>
-                </DialogContent>
-              </Dialog>
+              <Button className="bg-white text-evryware hover:bg-gray-100 px-8 py-3 text-lg group">
+                Schedule a Consultation
+                <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+              </Button>
             </div>
           </div>
         </div>
@@ -392,12 +366,11 @@ const Index = () => {
               evryware
             </div>
             <div className="text-sm opacity-75">
-              © 2024 Evryware Inc. All rights reserved.
+              © 2025 Evryware Inc. All rights reserved.
             </div>
           </div>
         </div>
       </footer>
     </div>;
 };
-
 export default Index;
