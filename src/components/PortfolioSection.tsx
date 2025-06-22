@@ -7,17 +7,20 @@ const PortfolioSection = () => {
     {
       title: "Healthcare Management System",
       category: "Web Application",
-      description: "Streamlined patient management for a local clinic"
+      description: "Streamlined patient management for a local clinic",
+      image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=400&h=225&fit=crop&crop=center"
     },
     {
       title: "E-commerce Platform",
-      category: "Online Store",
-      description: "Custom shopping experience for artisan marketplace"
+      category: "Online Store", 
+      description: "Custom shopping experience for artisan marketplace",
+      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=225&fit=crop&crop=center"
     },
     {
       title: "Event Management Portal",
       category: "Non-Profit",
-      description: "Registration and coordination system for community events"
+      description: "Registration and coordination system for community events",
+      image: "https://images.unsplash.com/photo-1511578314322-379afb476865?w=400&h=225&fit=crop&crop=center"
     }
   ];
 
@@ -47,8 +50,12 @@ const PortfolioSection = () => {
           {projects.map((project, index) => (
             <Card key={index} className="border-none shadow-lg hover:shadow-xl transition-shadow group cursor-pointer bg-white/95 backdrop-blur-sm">
               <CardContent className="p-6">
-                <div className="h-32 bg-gradient-to-br from-gray-100 to-gray-200 rounded-lg mb-4 flex items-center justify-center">
-                  <Code className="h-8 w-8 text-gray-400" />
+                <div className="h-32 rounded-lg mb-4 overflow-hidden">
+                  <img
+                    src={project.image}
+                    alt={`${project.title} preview`}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <span className="text-sm text-evryware font-medium">{project.category}</span>
                 <h3 className="text-lg font-semibold mb-2 text-gray-900">{project.title}</h3>
