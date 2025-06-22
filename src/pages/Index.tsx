@@ -3,6 +3,7 @@ import { Menu, X, ArrowRight, Code, Users, Lightbulb, Star, Mail, Phone, MapPin 
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
+
 const Index = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('hero');
@@ -179,11 +180,19 @@ const Index = () => {
       </section>
 
       {/* Services Section */}
-      <section id="services" className="py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section id="services" className="py-20 relative" style={{
+        backgroundImage: `url('/lovable-uploads/9e4cd242-a70f-4ce3-b43f-0bc946eaeb86.png')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}>
+        {/* Dark overlay for text legibility */}
+        <div className="absolute inset-0 bg-black/60"></div>
+        
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-semibold text-evryware mb-4">Our Services</h2>
-            <p className="text-xl text-gray-600">
+            <h2 className="text-4xl font-semibold text-white mb-4">Our Services</h2>
+            <p className="text-xl text-white/90">
               Comprehensive technology solutions tailored to your needs
             </p>
           </div>
@@ -207,7 +216,7 @@ const Index = () => {
           }, {
             title: "Support & Maintenance",
             description: "Ongoing support to keep your systems running smoothly"
-          }].map((service, index) => <Card key={index} className="border-none shadow-lg hover:shadow-xl transition-shadow">
+          }].map((service, index) => <Card key={index} className="border-none shadow-lg hover:shadow-xl transition-shadow bg-white/95 backdrop-blur-sm">
                 <CardContent className="p-6">
                   <h3 className="text-xl font-semibold mb-3 text-evryware">{service.title}</h3>
                   <p className="text-gray-600">{service.description}</p>
@@ -402,4 +411,5 @@ const Index = () => {
       </footer>
     </div>;
 };
+
 export default Index;
