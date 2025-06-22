@@ -349,7 +349,7 @@ const Index = () => {
             </div>
             
             <div>
-              <h3 className="text-2xl font-semibold mb-6">Start a Conversation</h3>
+              <h3 className="text-2xl font-semibold mb-6">Let's do Business</h3>
               <p className="opacity-90 mb-6">
                 Whether you're a business looking to modernize your operations or a non-profit 
                 seeking to amplify your impact, we're here to help you find the right solution.
