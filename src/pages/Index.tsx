@@ -109,7 +109,7 @@ const Index = () => {
       <section id="about" className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-semibold text-evryware mb-4">About</h2>
+            <h2 className="text-4xl font-semibold text-evryware mb-4">About Us</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto"></p>
           </div>
           
@@ -366,7 +366,7 @@ const Index = () => {
               evryware
             </div>
             <div className="text-sm opacity-75">
-              © 2025 Evryware Inc. All rights reserved.
+              © 2024 Evryware Inc. All rights reserved.
             </div>
           </div>
         </div>
