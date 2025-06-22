@@ -1,6 +1,7 @@
 
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { AspectRatio } from "@/components/ui/aspect-ratio";
 
 const ProductsSection = () => {
   return (
@@ -14,6 +15,15 @@ const ProductsSection = () => {
         <div className="grid md:grid-cols-2 gap-12">
           <Card className="border-none shadow-lg">
             <CardContent className="p-8">
+              <div className="mb-6">
+                <AspectRatio ratio={16 / 9} className="bg-muted rounded-lg overflow-hidden">
+                  <img
+                    src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=400&h=225&fit=crop&crop=center"
+                    alt="askPreye product preview"
+                    className="w-full h-full object-cover"
+                  />
+                </AspectRatio>
+              </div>
               <h3 className="text-2xl font-semibold mb-4 text-evryware">askPreye</h3>
               <p className="text-gray-600 mb-6">
                 Comprehensive platform combining CRM, project management, and financial tracking 
@@ -27,6 +37,15 @@ const ProductsSection = () => {
           
           <Card className="border-none shadow-lg">
             <CardContent className="p-8">
+              <div className="mb-6">
+                <AspectRatio ratio={16 / 9} className="bg-muted rounded-lg overflow-hidden">
+                  <img
+                    src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=400&h=225&fit=crop&crop=center"
+                    alt="Kommunity product preview"
+                    className="w-full h-full object-cover"
+                  />
+                </AspectRatio>
+              </div>
               <h3 className="text-2xl font-semibold mb-4 text-evryware">Kommunity</h3>
               <p className="text-gray-600 mb-6">
                 Donor management and volunteer coordination system built to help non-profits 
