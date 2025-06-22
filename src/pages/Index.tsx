@@ -1,30 +1,30 @@
+
 import { useState, useEffect } from 'react';
 import { Menu, X, ArrowRight, Code, Users, Lightbulb, Star, Mail, Phone, MapPin } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+
 const Index = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('hero');
+
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({
-        behavior: 'smooth'
-      });
+      element.scrollIntoView({ behavior: 'smooth' });
     }
     setIsMenuOpen(false);
   };
+
   useEffect(() => {
     const handleScroll = () => {
       const sections = ['hero', 'about', 'services', 'products', 'portfolio', 'testimonials', 'contact'];
       const scrollPosition = window.scrollY + 100;
+
       for (const section of sections) {
         const element = document.getElementById(section);
         if (element) {
-          const {
-            offsetTop,
-            offsetHeight
-          } = element;
+          const { offsetTop, offsetHeight } = element;
           if (scrollPosition >= offsetTop && scrollPosition < offsetTop + offsetHeight) {
             setActiveSection(section);
             break;
@@ -32,61 +32,76 @@ const Index = () => {
         }
       }
     };
+
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
-  const navItems = [{
-    id: 'about',
-    label: 'About'
-  }, {
-    id: 'services',
-    label: 'Services'
-  }, {
-    id: 'products',
-    label: 'Products'
-  }, {
-    id: 'portfolio',
-    label: 'Portfolio'
-  }, {
-    id: 'testimonials',
-    label: 'Testimonials'
-  }, {
-    id: 'contact',
-    label: 'Contact'
-  }];
-  return <div className="min-h-screen bg-white font-fira">
+
+  const navItems = [
+    { id: 'about', label: 'About' },
+    { id: 'services', label: 'Services' },
+    { id: 'products', label: 'Products' },
+    { id: 'portfolio', label: 'Portfolio' },
+    { id: 'testimonials', label: 'Testimonials' },
+    { id: 'contact', label: 'Contact' },
+  ];
+
+  return (
+    <div className="min-h-screen bg-white font-fira">
       {/* Sticky Header */}
       <header className="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm border-b border-gray-100 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             {/* Logo */}
             <div className="flex-shrink-0">
-              <button onClick={() => scrollToSection('hero')} className="font-orbitron text-2xl font-semibold text-evryware lowercase hover:text-gray-600 transition-colors">
+              <button 
+                onClick={() => scrollToSection('hero')}
+                className="font-orbitron text-2xl font-semibold text-evryware lowercase hover:text-gray-600 transition-colors"
+              >
                 evryware
               </button>
             </div>
 
             {/* Desktop Navigation */}
             <nav className="hidden md:flex space-x-8">
-              {navItems.map(item => <button key={item.id} onClick={() => scrollToSection(item.id)} className={`text-sm font-medium transition-colors hover:text-evryware ${activeSection === item.id ? 'text-evryware' : 'text-gray-600'}`}>
+              {navItems.map((item) => (
+                <button
+                  key={item.id}
+                  onClick={() => scrollToSection(item.id)}
+                  className={`text-sm font-medium transition-colors hover:text-evryware ${
+                    activeSection === item.id ? 'text-evryware' : 'text-gray-600'
+                  }`}
+                >
                   {item.label}
-                </button>)}
+                </button>
+              ))}
             </nav>
 
             {/* Mobile menu button */}
-            <button className="md:hidden" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+            <button
+              className="md:hidden"
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+            >
               {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
           </div>
 
           {/* Mobile Navigation */}
-          {isMenuOpen && <div className="md:hidden absolute top-16 left-0 right-0 bg-white border-b border-gray-100 shadow-lg">
+          {isMenuOpen && (
+            <div className="md:hidden absolute top-16 left-0 right-0 bg-white border-b border-gray-100 shadow-lg">
               <nav className="px-4 py-4 space-y-4">
-                {navItems.map(item => <button key={item.id} onClick={() => scrollToSection(item.id)} className="block w-full text-left text-gray-600 hover:text-evryware font-medium">
+                {navItems.map((item) => (
+                  <button
+                    key={item.id}
+                    onClick={() => scrollToSection(item.id)}
+                    className="block w-full text-left text-gray-600 hover:text-evryware font-medium"
+                  >
                     {item.label}
-                  </button>)}
+                  </button>
+                ))}
               </nav>
-            </div>}
+            </div>
+          )}
         </div>
       </header>
 
@@ -94,15 +109,20 @@ const Index = () => {
       <section id="hero" className="pt-16 min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="animate-fade-in">
-            
-            <p className="text-xl text-gray-600 mb-8 font-bold md:text-5xl">
+            <h1 className="font-orbitron text-5xl md:text-7xl font-semibold text-evryware mb-6 lowercase">
+              evryware
+            </h1>
+            <p className="text-xl md:text-2xl text-gray-600 mb-8 font-medium">
               simple . smart . solutions
             </p>
             <p className="text-lg text-gray-700 mb-12 max-w-2xl mx-auto">
               Ontario-based technology consultancy partnering with businesses and non-profits 
               to deliver straightforward, intelligent digital solutions that work.
             </p>
-            <Button onClick={() => scrollToSection('contact')} className="bg-evryware hover:bg-evryware-dark text-white px-8 py-3 text-lg group">
+            <Button 
+              onClick={() => scrollToSection('contact')}
+              className="bg-evryware hover:bg-evryware-dark text-white px-8 py-3 text-lg group"
+            >
               Get Started
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </Button>
@@ -166,30 +186,39 @@ const Index = () => {
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[{
-            title: "Web Development",
-            description: "Custom websites and web applications built with modern technologies"
-          }, {
-            title: "Digital Strategy",
-            description: "Strategic planning to align technology with your business goals"
-          }, {
-            title: "System Integration",
-            description: "Seamlessly connect your existing systems and workflows"
-          }, {
-            title: "Data Analytics",
-            description: "Transform your data into actionable insights and reports"
-          }, {
-            title: "Cloud Solutions",
-            description: "Scalable cloud infrastructure and migration services"
-          }, {
-            title: "Support & Maintenance",
-            description: "Ongoing support to keep your systems running smoothly"
-          }].map((service, index) => <Card key={index} className="border-none shadow-lg hover:shadow-xl transition-shadow">
+            {[
+              {
+                title: "Web Development",
+                description: "Custom websites and web applications built with modern technologies"
+              },
+              {
+                title: "Digital Strategy",
+                description: "Strategic planning to align technology with your business goals"
+              },
+              {
+                title: "System Integration",
+                description: "Seamlessly connect your existing systems and workflows"
+              },
+              {
+                title: "Data Analytics",
+                description: "Transform your data into actionable insights and reports"
+              },
+              {
+                title: "Cloud Solutions",
+                description: "Scalable cloud infrastructure and migration services"
+              },
+              {
+                title: "Support & Maintenance",
+                description: "Ongoing support to keep your systems running smoothly"
+              }
+            ].map((service, index) => (
+              <Card key={index} className="border-none shadow-lg hover:shadow-xl transition-shadow">
                 <CardContent className="p-6">
                   <h3 className="text-xl font-semibold mb-3 text-evryware">{service.title}</h3>
                   <p className="text-gray-600">{service.description}</p>
                 </CardContent>
-              </Card>)}
+              </Card>
+            ))}
           </div>
         </div>
       </section>
@@ -245,31 +274,39 @@ const Index = () => {
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[{
-            title: "Healthcare Management System",
-            category: "Web Application",
-            description: "Streamlined patient management for a local clinic"
-          }, {
-            title: "E-commerce Platform",
-            category: "Online Store",
-            description: "Custom shopping experience for artisan marketplace"
-          }, {
-            title: "Event Management Portal",
-            category: "Non-Profit",
-            description: "Registration and coordination system for community events"
-          }, {
-            title: "Financial Dashboard",
-            category: "Analytics",
-            description: "Real-time reporting for investment management firm"
-          }, {
-            title: "Learning Management System",
-            category: "Education",
-            description: "Online training platform for corporate clients"
-          }, {
-            title: "Inventory Tracking",
-            category: "Operations",
-            description: "Automated stock management for manufacturing company"
-          }].map((project, index) => <Card key={index} className="border-none shadow-lg hover:shadow-xl transition-shadow group cursor-pointer">
+            {[
+              {
+                title: "Healthcare Management System",
+                category: "Web Application",
+                description: "Streamlined patient management for a local clinic"
+              },
+              {
+                title: "E-commerce Platform",
+                category: "Online Store",
+                description: "Custom shopping experience for artisan marketplace"
+              },
+              {
+                title: "Event Management Portal",
+                category: "Non-Profit",
+                description: "Registration and coordination system for community events"
+              },
+              {
+                title: "Financial Dashboard",
+                category: "Analytics",
+                description: "Real-time reporting for investment management firm"
+              },
+              {
+                title: "Learning Management System",
+                category: "Education",
+                description: "Online training platform for corporate clients"
+              },
+              {
+                title: "Inventory Tracking",
+                category: "Operations",
+                description: "Automated stock management for manufacturing company"
+              }
+            ].map((project, index) => (
+              <Card key={index} className="border-none shadow-lg hover:shadow-xl transition-shadow group cursor-pointer">
                 <CardContent className="p-6">
                   <div className="h-32 bg-gradient-to-br from-gray-100 to-gray-200 rounded-lg mb-4 flex items-center justify-center">
                     <Code className="h-8 w-8 text-gray-400" />
@@ -278,7 +315,8 @@ const Index = () => {
                   <h3 className="text-lg font-semibold mb-2 text-gray-900">{project.title}</h3>
                   <p className="text-gray-600 text-sm">{project.description}</p>
                 </CardContent>
-              </Card>)}
+              </Card>
+            ))}
           </div>
         </div>
       </section>
@@ -294,22 +332,29 @@ const Index = () => {
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[{
-            name: "Sarah Mitchell",
-            company: "Green Valley Non-Profit",
-            quote: "Evryware transformed our donor management process. What used to take hours now takes minutes. Their solution is exactly what we needed - simple yet powerful."
-          }, {
-            name: "Mark Thompson",
-            company: "Thompson Manufacturing",
-            quote: "The team at Evryware didn't just build us software, they became our technology partners. They understand our business and deliver solutions that actually work."
-          }, {
-            name: "Lisa Chen",
-            company: "Ontario Medical Clinic",
-            quote: "Professional, responsive, and results-driven. Evryware delivered our patient management system on time and within budget. Highly recommended."
-          }].map((testimonial, index) => <Card key={index} className="border-none shadow-lg">
+            {[
+              {
+                name: "Sarah Mitchell",
+                company: "Green Valley Non-Profit",
+                quote: "Evryware transformed our donor management process. What used to take hours now takes minutes. Their solution is exactly what we needed - simple yet powerful."
+              },
+              {
+                name: "Mark Thompson",
+                company: "Thompson Manufacturing",
+                quote: "The team at Evryware didn't just build us software, they became our technology partners. They understand our business and deliver solutions that actually work."
+              },
+              {
+                name: "Lisa Chen",
+                company: "Ontario Medical Clinic",
+                quote: "Professional, responsive, and results-driven. Evryware delivered our patient management system on time and within budget. Highly recommended."
+              }
+            ].map((testimonial, index) => (
+              <Card key={index} className="border-none shadow-lg">
                 <CardContent className="p-6">
                   <div className="flex mb-4">
-                    {[...Array(5)].map((_, i) => <Star key={i} className="h-4 w-4 fill-yellow-400 text-yellow-400" />)}
+                    {[...Array(5)].map((_, i) => (
+                      <Star key={i} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+                    ))}
                   </div>
                   <p className="text-gray-600 mb-4 italic">"{testimonial.quote}"</p>
                   <div>
@@ -317,7 +362,8 @@ const Index = () => {
                     <p className="text-sm text-gray-500">{testimonial.company}</p>
                   </div>
                 </CardContent>
-              </Card>)}
+              </Card>
+            ))}
           </div>
         </div>
       </section>
@@ -357,7 +403,9 @@ const Index = () => {
                 Whether you're a business looking to modernize your operations or a non-profit 
                 seeking to amplify your impact, we're here to help you find the right solution.
               </p>
-              <Button className="bg-white text-evryware hover:bg-gray-100 px-8 py-3 text-lg group">
+              <Button 
+                className="bg-white text-evryware hover:bg-gray-100 px-8 py-3 text-lg group"
+              >
                 Schedule a Consultation
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </Button>
@@ -379,6 +427,8 @@ const Index = () => {
           </div>
         </div>
       </footer>
-    </div>;
+    </div>
+  );
 };
+
 export default Index;
