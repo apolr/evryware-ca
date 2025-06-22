@@ -2,6 +2,14 @@ import { useState, useEffect } from 'react';
 import { Menu, X, ArrowRight, Code, Users, Lightbulb, Star, Mail, Phone, MapPin } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
+
 const Index = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('hero');
@@ -91,16 +99,60 @@ const Index = () => {
       </header>
 
       {/* Hero Section */}
-      <section id="hero" className="pt-16 min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 to-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <section 
+        id="hero" 
+        className="pt-16 min-h-screen flex items-center justify-center relative"
+        style={{
+          backgroundImage: `url('/lovable-uploads/6a88e9b1-cc21-42e6-9a39-0598ed92cf6a.png')`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat'
+        }}
+      >
+        {/* Dark overlay for text legibility */}
+        <div className="absolute inset-0 bg-black/40"></div>
+        
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
           <div className="animate-fade-in">
-            <h1 className="font-orbitron text-5xl font-semibold text-evryware mb-6 lowercase md:text-6xl">simple . smart . solutions</h1>
+            <h1 className="font-orbitron text-5xl font-semibold text-white mb-6 lowercase md:text-6xl drop-shadow-lg">simple . smart . solutions</h1>
             
-            <p className="text-lg text-gray-700 mb-12 max-w-2xl mx-auto">A technology company working with businesses and non-profits to deliver straightforward, intelligent digital solutions that work.</p>
-            <Button onClick={() => scrollToSection('contact')} className="bg-evryware hover:bg-evryware-dark text-white px-8 py-3 text-lg group">
-              Get Started
-              <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-            </Button>
+            <p className="text-lg text-white/90 mb-12 max-w-2xl mx-auto drop-shadow-md">A technology company working with businesses and non-profits to deliver straightforward, intelligent digital solutions that work.</p>
+            
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Dialog>
+                <DialogTrigger asChild>
+                  <Button className="bg-evryware hover:bg-evryware-dark text-white px-8 py-3 text-lg group shadow-lg">
+                    Get a Free Consultation
+                    <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                  </Button>
+                </DialogTrigger>
+                <DialogContent className="sm:max-w-md">
+                  <DialogHeader>
+                    <DialogTitle>Schedule Your Free Consultation</DialogTitle>
+                  </DialogHeader>
+                  <div className="flex flex-col space-y-4">
+                    <p className="text-sm text-gray-600">
+                      Ready to discuss your project? Book a 30-minute consultation with our team.
+                    </p>
+                    <iframe 
+                      src="https://calendly.com/hello-evryware/30min" 
+                      width="100%" 
+                      height="600"
+                      frameBorder="0"
+                      title="Schedule Consultation"
+                    ></iframe>
+                  </div>
+                </DialogContent>
+              </Dialog>
+              
+              <Button 
+                onClick={() => scrollToSection('products')} 
+                variant="outline" 
+                className="border-2 border-white text-white hover:bg-white hover:text-evryware px-8 py-3 text-lg backdrop-blur-sm bg-white/10 shadow-lg"
+              >
+                Our Products
+              </Button>
+            </div>
           </div>
         </div>
       </section>
@@ -373,4 +425,5 @@ const Index = () => {
       </footer>
     </div>;
 };
+
 export default Index;
