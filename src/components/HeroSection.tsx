@@ -17,9 +17,7 @@ const HeroSection = ({
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
         <div className="animate-fade-in">
-          <h1 className="font-orbitron text-5xl font-semibold text-white mb-6 lowercase md:text-6xl drop-shadow-lg">
-            simple . smart . solutions
-          </h1>
+          <h1 className="font-orbitron text-5xl font-semibold text-white mb-6 lowercase md:text-6xl drop-shadow-lg">smart . simple . solutions</h1>
           
           <p className="text-lg text-white/90 mb-12 max-w-2xl mx-auto drop-shadow-md">We are a technology company working with businesses and non-profits to deliver straightforward, intelligent digital solutions that work.</p>
           
