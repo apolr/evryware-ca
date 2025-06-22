@@ -26,11 +26,6 @@ const ProductsSection = () => {
                 </AspectRatio>
               </div>
               
-              <div className="mb-6">
-                <AspectRatio ratio={16 / 9} className="bg-muted rounded-lg overflow-hidden">
-                  <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=400&h=225&fit=crop&crop=center" alt="askPreye product preview" className="w-full h-full object-cover" />
-                </AspectRatio>
-              </div>
               <h3 className="text-2xl font-semibold mb-4 text-evryware">askPreye</h3>
               <p className="text-gray-600 mb-6">
                 Comprehensive platform combining CRM, project management, and financial tracking 
