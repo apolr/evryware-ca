@@ -3,7 +3,6 @@ import { Menu, X, ArrowRight, Code, Users, Lightbulb, Star, Mail, Phone, MapPin 
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
-
 const Index = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('hero');
@@ -181,11 +180,11 @@ const Index = () => {
 
       {/* Services Section */}
       <section id="services" className="py-20 relative" style={{
-        backgroundImage: `url('/lovable-uploads/a7c74e80-1f65-4a7a-ada4-0a9547e9dfb5.png')`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat'
-      }}>
+      backgroundImage: `url('/lovable-uploads/a7c74e80-1f65-4a7a-ada4-0a9547e9dfb5.png')`,
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      backgroundRepeat: 'no-repeat'
+    }}>
         {/* Dark overlay for text legibility */}
         <div className="absolute inset-0 bg-black/70"></div>
         
@@ -237,7 +236,7 @@ const Index = () => {
           <div className="grid md:grid-cols-2 gap-12">
             <Card className="border-none shadow-lg">
               <CardContent className="p-8">
-                <h3 className="text-2xl font-semibold mb-4 text-evryware">Business Management Suite</h3>
+                <h3 className="text-2xl font-semibold mb-4 text-evryware">askPreye</h3>
                 <p className="text-gray-600 mb-6">
                   Comprehensive platform combining CRM, project management, and financial tracking 
                   designed specifically for small to medium businesses.
@@ -266,11 +265,11 @@ const Index = () => {
 
       {/* Portfolio Section */}
       <section id="portfolio" className="py-20 relative" style={{
-        backgroundImage: `url('/lovable-uploads/bed527d0-3fc9-4116-8fcd-ae74817702a0.png')`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat'
-      }}>
+      backgroundImage: `url('/lovable-uploads/bed527d0-3fc9-4116-8fcd-ae74817702a0.png')`,
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      backgroundRepeat: 'no-repeat'
+    }}>
         {/* Light overlay for text legibility */}
         <div className="absolute inset-0 bg-white/80"></div>
         
@@ -362,11 +361,11 @@ const Index = () => {
 
       {/* Contact Section */}
       <section id="contact" className="py-20 relative" style={{
-        backgroundImage: `url('/lovable-uploads/f025ab89-dee6-48a0-8e94-99d7dda60936.png')`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat'
-      }}>
+      backgroundImage: `url('/lovable-uploads/f025ab89-dee6-48a0-8e94-99d7dda60936.png')`,
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      backgroundRepeat: 'no-repeat'
+    }}>
         {/* Grey overlay for text legibility */}
         <div className="absolute inset-0 bg-gray-600/30"></div>
         
@@ -427,5 +426,4 @@ const Index = () => {
       </footer>
     </div>;
 };
-
 export default Index;
