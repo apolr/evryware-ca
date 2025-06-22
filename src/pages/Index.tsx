@@ -2,14 +2,7 @@ import { useState, useEffect } from 'react';
 import { Menu, X, ArrowRight, Code, Users, Lightbulb, Star, Mail, Phone, MapPin } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import {
-  Dialog,
-  DialogContent,
-  DialogHeader,
-  DialogTitle,
-  DialogTrigger,
-} from "@/components/ui/dialog";
-
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 const Index = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('hero');
@@ -99,16 +92,12 @@ const Index = () => {
       </header>
 
       {/* Hero Section */}
-      <section 
-        id="hero" 
-        className="pt-16 min-h-screen flex items-center justify-center relative"
-        style={{
-          backgroundImage: `url('/lovable-uploads/6a88e9b1-cc21-42e6-9a39-0598ed92cf6a.png')`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          backgroundRepeat: 'no-repeat'
-        }}
-      >
+      <section id="hero" className="pt-16 min-h-screen flex items-center justify-center relative" style={{
+      backgroundImage: `url('/lovable-uploads/6a88e9b1-cc21-42e6-9a39-0598ed92cf6a.png')`,
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      backgroundRepeat: 'no-repeat'
+    }}>
         {/* Dark overlay for text legibility */}
         <div className="absolute inset-0 bg-black/40"></div>
         
@@ -134,22 +123,12 @@ const Index = () => {
                     <p className="text-sm text-gray-600">
                       Ready to discuss your project? Book a 30-minute consultation with our team.
                     </p>
-                    <iframe 
-                      src="https://calendly.com/hello-evryware/30min" 
-                      width="100%" 
-                      height="600"
-                      frameBorder="0"
-                      title="Schedule Consultation"
-                    ></iframe>
+                    <iframe src="https://calendly.com/hello-evryware/30min" width="100%" height="600" frameBorder="0" title="Schedule Consultation"></iframe>
                   </div>
                 </DialogContent>
               </Dialog>
               
-              <Button 
-                onClick={() => scrollToSection('products')} 
-                variant="outline" 
-                className="border-2 border-white text-white hover:bg-white hover:text-evryware px-8 py-3 text-lg backdrop-blur-sm bg-white/10 shadow-lg"
-              >
+              <Button onClick={() => scrollToSection('products')} variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-evryware px-8 py-3 text-lg backdrop-blur-sm bg-white/10 shadow-lg">
                 Our Products
               </Button>
             </div>
@@ -243,9 +222,7 @@ const Index = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-semibold text-evryware mb-4">Our Products</h2>
-            <p className="text-xl text-gray-600">
-              Ready-to-use solutions for common business challenges
-            </p>
+            <p className="text-xl text-gray-600">Innovative solutions for common business challenges</p>
           </div>
           
           <div className="grid md:grid-cols-2 gap-12">
@@ -425,5 +402,4 @@ const Index = () => {
       </footer>
     </div>;
 };
-
 export default Index;
