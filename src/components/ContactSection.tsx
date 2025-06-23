@@ -1,5 +1,5 @@
 
-import { Mail, Phone, MapPin } from 'lucide-react';
+import { Mail, Phone, MapPin, Facebook, Instagram, Linkedin, Twitter, Youtube } from 'lucide-react';
 import ConsultationDialog from "./ConsultationDialog";
 
 const ContactSection = () => {
@@ -56,6 +56,25 @@ const ContactSection = () => {
               <div className="flex items-center">
                 <MapPin className="h-5 w-5 mr-3 text-white" />
                 <span className="text-white">Ontario, Canada</span>
+              </div>
+              
+              {/* Social Media Icons */}
+              <div className="flex space-x-4 mt-6">
+                <a href="#" className="transition-colors duration-300">
+                  <Linkedin className="h-6 w-6 text-white hover:text-[#0077B5]" />
+                </a>
+                <a href="#" className="transition-colors duration-300">
+                  <Facebook className="h-6 w-6 text-white hover:text-[#1877F2]" />
+                </a>
+                <a href="#" className="transition-colors duration-300">
+                  <Twitter className="h-6 w-6 text-white hover:text-[#1DA1F2]" />
+                </a>
+                <a href="#" className="transition-colors duration-300">
+                  <Youtube className="h-6 w-6 text-white hover:text-[#FF0000]" />
+                </a>
+                <a href="#" className="transition-colors duration-300">
+                  <Instagram className="h-6 w-6 text-white hover:text-[#E4405F]" />
+                </a>
               </div>
             </div>
           </div>
