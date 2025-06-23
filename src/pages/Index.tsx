@@ -9,6 +9,7 @@ import PortfolioSection from '../components/PortfolioSection';
 import TestimonialsSection from '../components/TestimonialsSection';
 import ContactSection from '../components/ContactSection';
 import Footer from '../components/Footer';
+import BackToTopButton from '../components/BackToTopButton';
 
 const Index = () => {
   const [activeSection, setActiveSection] = useState('hero');
@@ -54,6 +55,7 @@ const Index = () => {
       <TestimonialsSection />
       <ContactSection />
       <Footer />
+      <BackToTopButton />
     </div>
   );
 };
