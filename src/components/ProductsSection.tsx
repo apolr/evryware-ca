@@ -20,10 +20,7 @@ const ProductsSection = () => {
               </div>
               
               <h3 className="text-2xl font-semibold mb-4 text-evryware">askPreye</h3>
-              <p className="text-gray-600 mb-6">
-                Comprehensive platform combining CRM, project management, and financial tracking 
-                designed specifically for small to medium businesses.
-              </p>
+              <p className="text-gray-600 mb-6">AI-powered concierge and marketplace offering African goods, local services, smart assistance, and vendor tools for seamless community access.</p>
               <a href="https://www.askpreye.com" target="_blank" rel="noopener noreferrer">
                 <Button variant="outline" className="border-evryware text-evryware hover:bg-evryware hover:text-white">
                   Learn More
