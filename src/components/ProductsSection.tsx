@@ -37,7 +37,7 @@ const ProductsSection = () => {
               {/* usékú blurb image */}
               <div className="mb-4">
                 <AspectRatio ratio={16 / 9} className="bg-muted rounded-lg overflow-hidden">
-                  <img alt="usékú product blurb" className="w-full h-full object-cover" src="/lovable-uploads/6d801f1d-b957-434a-ada9-fe0b7cd360b0.png" />
+                  <img alt="usékú product blurb" className="w-full h-full object-cover" src="/lovable-uploads/ee604703-160a-41dc-ae54-ec347a869987.png" />
                 </AspectRatio>
               </div>
             
