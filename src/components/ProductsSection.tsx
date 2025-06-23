@@ -15,7 +15,7 @@ const ProductsSection = () => {
               {/* askPreye blurb image */}
               <div className="mb-4">
                 <AspectRatio ratio={16 / 9} className="bg-muted rounded-lg overflow-hidden">
-                  <img src="/lovable-uploads/d62132f5-edfb-491a-944d-86d6baf3be60.png" alt="askPreye product blurb" className="w-full h-full object-cover" />
+                  <img alt="askPreye product blurb" className="w-full h-full object-cover" src="/lovable-uploads/743b37b4-67ef-46c4-a6bc-2f1aaa271d30.png" />
                 </AspectRatio>
               </div>
               
