@@ -41,7 +41,7 @@ const ProductsSection = () => {
                 </AspectRatio>
               </div>
             
-              <h3 className="text-2xl font-semibold mb-4 text-evryware">usékú</h3>
+              <h3 className="text-2xl font-semibold mb-4 text-evryware">Makarios</h3>
               <p className="text-gray-600 mb-6">
                 Donor management and volunteer coordination system built to help non-profits 
                 maximize their impact and streamline operations.
