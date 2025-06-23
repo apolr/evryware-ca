@@ -1,5 +1,6 @@
 
-import { Mail, Phone, MapPin, Facebook, Instagram, Linkedin, Twitter, Youtube } from 'lucide-react';
+import { Mail, Phone, MapPin, Facebook, Instagram, Linkedin, Youtube } from 'lucide-react';
+import XIcon from './icons/XIcon';
 import ConsultationDialog from "./ConsultationDialog";
 
 const ContactSection = () => {
@@ -67,7 +68,7 @@ const ContactSection = () => {
                   <Facebook className="h-6 w-6 text-white hover:text-[#1877F2]" />
                 </a>
                 <a href="#" className="transition-colors duration-300">
-                  <Twitter className="h-6 w-6 text-white hover:text-[#1DA1F2]" />
+                  <XIcon className="h-6 w-6 text-white hover:text-black" />
                 </a>
                 <a href="#" className="transition-colors duration-300">
                   <Youtube className="h-6 w-6 text-white hover:text-[#FF0000]" />
