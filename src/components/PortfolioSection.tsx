@@ -17,9 +17,9 @@ const PortfolioSection = () => {
       image: "/lovable-uploads/2e18a537-fa0a-4e06-8f3e-2a821a2778ab.png"
     },
     {
-      title: "Nigerian Students Association Hamilton",
+      title: "Nigerian Canadian Association, Hamilton",
       category: "Non-Profit Organization",
-      description: "Community platform celebrating Nigerian culture and student connections",
+      description: "Community platform celebrating and promoting Nigerian culture and fostering relationships",
       image: "/lovable-uploads/b0705b9c-c072-4e0b-a4e1-c2c1c67d7cdb.png"
     }
   ];
