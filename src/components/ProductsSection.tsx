@@ -37,11 +37,11 @@ const ProductsSection = () => {
               {/* usékú blurb image */}
               <div className="mb-4">
                 <AspectRatio ratio={16 / 9} className="bg-muted rounded-lg overflow-hidden">
-                  <img alt="usékú product blurb" className="w-full h-full object-cover" src="/lovable-uploads/6407452d-75fe-4887-b1d6-bb04f368bdd9.png" />
+                  <img alt="usékú product blurb" className="w-full h-full object-cover" src="/lovable-uploads/b450079d-a5ca-4be6-a7b6-1a73b42a6e22.png" />
                 </AspectRatio>
               </div>
             
-              <h3 className="text-2xl font-semibold mb-4 text-evryware">Makarios</h3>
+              <h3 className="text-2xl font-semibold mb-4 text-evryware">evry.ai</h3>
               <p className="text-gray-600 mb-6">
                 Donor management and volunteer coordination system built to help non-profits 
                 maximize their impact and streamline operations.
