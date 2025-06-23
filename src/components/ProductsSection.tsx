@@ -37,15 +37,12 @@ const ProductsSection = () => {
               {/* usékú blurb image */}
               <div className="mb-4">
                 <AspectRatio ratio={16 / 9} className="bg-muted rounded-lg overflow-hidden">
-                  <img alt="usékú product blurb" className="w-full h-full object-cover" src="/lovable-uploads/b450079d-a5ca-4be6-a7b6-1a73b42a6e22.png" />
+                  <img alt="usékú product blurb" className="w-full h-full object-cover" src="/lovable-uploads/6d801f1d-b957-434a-ada9-fe0b7cd360b0.png" />
                 </AspectRatio>
               </div>
             
               <h3 className="text-2xl font-semibold mb-4 text-evryware">evry.ai</h3>
-              <p className="text-gray-600 mb-6">
-                Donor management and volunteer coordination system built to help non-profits 
-                maximize their impact and streamline operations.
-              </p>
+              <p className="text-gray-600 mb-6">evry.ai delivers AI-powered micro-services such as language and voice agents that seamlessly enhance and power client applications with intelligent capabilities.</p>
               <Button variant="outline" className="border-evryware text-evryware hover:bg-evryware hover:text-white">Coming Soon</Button>
             </CardContent>
           </Card>
