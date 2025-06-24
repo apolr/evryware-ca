@@ -23,7 +23,7 @@ const TestimonialsSection = () => {
                 <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
                 <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
               </div>
-              <p className="text-gray-600 mb-4 italic">"Evryware transformed our donor management process. What used to take hours now takes minutes. Their solution is exactly what we needed - simple yet powerful."</p>
+              <p className="text-gray-600 mb-4 italic">"Evryware expertly guided our Agile project, ensuring clear communication and timely delivery. Their professionalism made a complex process smooth and effective."</p>
               <div>
                 <p className="font-semibold text-evryware">Ray Frank</p>
                 <p className="text-sm text-gray-500">Northern Sparkle</p>
