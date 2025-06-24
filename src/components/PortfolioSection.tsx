@@ -2,6 +2,7 @@
 import { Code } from 'lucide-react';
 import { Card, CardContent } from "@/components/ui/card";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
+import { Button } from "@/components/ui/button";
 
 const PortfolioSection = () => {
   const projects = [
@@ -9,19 +10,22 @@ const PortfolioSection = () => {
       title: "Hamilton Black Health Community Leaders Forum",
       category: "Community Organization",
       description: "Event coordination and community engagement platform for health initiatives",
-      image: "/lovable-uploads/faed6047-9b8d-4325-826f-38a34c94b229.png"
+      image: "/lovable-uploads/faed6047-9b8d-4325-826f-38a34c94b229.png",
+      url: "#"
     },
     {
       title: "À La Carte Cleaning Services",
       category: "Service Business", 
       description: "Professional cleaning service booking and management system",
-      image: "/lovable-uploads/2e18a537-fa0a-4e06-8f3e-2a821a2778ab.png"
+      image: "/lovable-uploads/2e18a537-fa0a-4e06-8f3e-2a821a2778ab.png",
+      url: "#"
     },
     {
       title: "Nigerian Canadian Association, Hamilton",
       category: "Non-Profit Organization",
       description: "Community platform celebrating and promoting Nigerian culture and fostering relationships",
-      image: "/lovable-uploads/b0705b9c-c072-4e0b-a4e1-c2c1c67d7cdb.png"
+      image: "/lovable-uploads/b0705b9c-c072-4e0b-a4e1-c2c1c67d7cdb.png",
+      url: "#"
     }
   ];
 
@@ -62,7 +66,16 @@ const PortfolioSection = () => {
                 </div>
                 <span className="text-sm text-evryware font-medium">{project.category}</span>
                 <h3 className="text-lg font-semibold mb-2 text-gray-900">{project.title}</h3>
-                <p className="text-gray-600 text-sm">{project.description}</p>
+                <p className="text-gray-600 text-sm mb-4">{project.description}</p>
+                <a href={project.url} target="_blank" rel="noopener noreferrer">
+                  <Button 
+                    variant="outline" 
+                    size="sm"
+                    className="border-evryware text-evryware hover:bg-evryware hover:text-white"
+                  >
+                    View Project
+                  </Button>
+                </a>
               </CardContent>
             </Card>
           ))}
