@@ -8,7 +8,7 @@ const TestimonialsSection = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-semibold text-evryware mb-4">Testimonials</h2>
-          <p className="text-xl text-gray-600">Ray Frank</p>
+          <p className="text-xl text-gray-600">What our clients say about us</p>
         </div>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -24,8 +24,8 @@ const TestimonialsSection = () => {
               </div>
               <p className="text-gray-600 mb-4 italic">"Evryware transformed our donor management process. What used to take hours now takes minutes. Their solution is exactly what we needed - simple yet powerful."</p>
               <div>
-                <p className="font-semibold text-evryware">Sarah Mitchell</p>
-                <p className="text-sm text-gray-500">Green Valley Non-Profit</p>
+                <p className="font-semibold text-evryware">Ray Frank</p>
+                <p className="text-sm text-gray-500">Northern Sparkle</p>
               </div>
             </CardContent>
           </Card>
@@ -42,8 +42,8 @@ const TestimonialsSection = () => {
               </div>
               <p className="text-gray-600 mb-4 italic">"The team at Evryware didn't just build us software, they became our technology partners. They understand our business and deliver solutions that actually work."</p>
               <div>
-                <p className="font-semibold text-evryware">Mark Thompson</p>
-                <p className="text-sm text-gray-500">Thompson Manufacturing</p>
+                <p className="font-semibold text-evryware">Mich Paul</p>
+                <p className="text-sm text-gray-500">Hamilton Black Health Community Leaders Forum</p>
               </div>
             </CardContent>
           </Card>
@@ -60,8 +60,8 @@ const TestimonialsSection = () => {
               </div>
               <p className="text-gray-600 mb-4 italic">"Professional, responsive, and results-driven. Evryware delivered our patient management system on time and within budget. Highly recommended."</p>
               <div>
-                <p className="font-semibold text-evryware">Lisa Chen</p>
-                <p className="text-sm text-gray-500">Ontario Medical Clinic</p>
+                <p className="font-semibold text-evryware">Gloria West</p>
+                <p className="text-sm text-gray-500">A La Carte Cleaning Services</p>
               </div>
             </CardContent>
           </Card>
