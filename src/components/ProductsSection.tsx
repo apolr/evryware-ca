@@ -20,7 +20,7 @@ const ProductsSection = () => {
               </div>
               
               <h3 className="text-2xl font-semibold mb-4 text-evryware">askPreye</h3>
-              <p className="text-gray-600 mb-6">Shop for African groceries, book reliable local services, access instant help from a smart assistant, and earn rewards - simply askPreye, your all-in-one Afrocentric platform.</p>
+              <p className="text-gray-600 mb-6">Shop African groceries, book nearby reliable professional services, cargo goods locally and internationally, access instant help from a smart assistant, and earn rewards! Simply askPreye, your smart afrocentric concierge.</p>
               <a href="https://www.askpreye.com" target="_blank" rel="noopener noreferrer">
                 <Button variant="outline" className="border-evryware text-evryware hover:bg-evryware hover:text-white">Curious? Learn More</Button>
               </a>
@@ -37,7 +37,7 @@ const ProductsSection = () => {
               </div>
             
               <h3 className="text-2xl font-semibold mb-4 text-evryware">evry.ai</h3>
-              <p className="text-gray-600 mb-6">Add a smart chatbot for instant customer support, auto-tag images for easy product management, summarize documents in seconds, transcribe audio for call centers, and forecast sales to boost your business all with seamless AI micro-services.</p>
+              <p className="text-gray-600 mb-6">Your access to a smart chatbot for instant customer support, auto-tag images for easy product management, summarize documents in seconds, transcribe audio for call centers, and forecast sales to boost your business all with seamless AI micro-services.</p>
               <Button variant="outline" className="border-evryware text-evryware hover:bg-evryware hover:text-white">Coming Soon</Button>
             </CardContent>
           </Card>
