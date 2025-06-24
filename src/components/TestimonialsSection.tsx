@@ -23,7 +23,7 @@ const TestimonialsSection = () => {
                 <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
                 <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
               </div>
-              <p className="text-gray-600 mb-4 italic">"Evryware expertly guided our Agile project, ensuring clear communication and timely delivery. Their professionalism made a complex process smooth and effective—just what our working group needed."</p>
+              <p className="text-gray-600 mb-4 italic">"Evryware transformed our donor management process. What used to take hours now takes minutes. Their solution is exactly what we needed - simple yet powerful."</p>
               <div>
                 <p className="font-semibold text-evryware">Ray Frank</p>
                 <p className="text-sm text-gray-500">Northern Sparkle</p>
@@ -41,7 +41,7 @@ const TestimonialsSection = () => {
                 <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
                 <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
               </div>
-              <p className="text-gray-600 mb-4 italic">"The team at Evryware didn't just build us software, they became our technology partners. They understand our business and deliver solutions that actually work."</p>
+              <p className="text-gray-600 mb-4 italic">"They delivered stunning graphics, a user-friendly website, and seamlessly integrated our newsletter and event registration. Their ongoing tech support is reliable and efficient—exactly what we needed."</p>
               <div>
                 <p className="font-semibold text-evryware">Mich Paul</p>
                 <p className="text-sm text-gray-500">Hamilton Black Health Community Leaders Forum</p>
