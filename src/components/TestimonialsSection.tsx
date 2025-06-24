@@ -8,7 +8,8 @@ const TestimonialsSection = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-semibold text-evryware mb-4">Testimonials</h2>
-          <p className="text-xl text-gray-600">What our clients say about us</p>
+          <p className="text-xl text-gray-600">What our Clients say about working with us
+</p>
         </div>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
