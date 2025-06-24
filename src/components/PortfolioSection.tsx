@@ -7,25 +7,25 @@ import { Button } from "@/components/ui/button";
 const PortfolioSection = () => {
   const projects = [
     {
+      title: "Nigerian Canadian Association, Hamilton",
+      category: "Non-Profit Organization",
+      description: "Community platform celebrating and promoting Nigerian culture and fostering relationships",
+      image: "/lovable-uploads/b0705b9c-c072-4e0b-a4e1-c2c1c67d7cdb.png",
+      url: "https://ncahamilton.ca/"
+    },
+    {
       title: "Hamilton Black Health Community Leaders Forum",
       category: "Community Organization",
       description: "Event coordination and community engagement platform for health initiatives",
       image: "/lovable-uploads/faed6047-9b8d-4325-826f-38a34c94b229.png",
-      url: "#"
+      url: "https://hbhclf.org/"
     },
     {
       title: "À La Carte Cleaning Services",
       category: "Service Business", 
       description: "Professional cleaning service booking and management system",
       image: "/lovable-uploads/2e18a537-fa0a-4e06-8f3e-2a821a2778ab.png",
-      url: "#"
-    },
-    {
-      title: "Nigerian Canadian Association, Hamilton",
-      category: "Non-Profit Organization",
-      description: "Community platform celebrating and promoting Nigerian culture and fostering relationships",
-      image: "/lovable-uploads/b0705b9c-c072-4e0b-a4e1-c2c1c67d7cdb.png",
-      url: "#"
+      url: "https://alacartecleaningservices.com/"
     }
   ];
 
