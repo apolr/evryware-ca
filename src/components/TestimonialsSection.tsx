@@ -59,7 +59,7 @@ const TestimonialsSection = () => {
                 <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
                 <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
               </div>
-              <p className="text-gray-600 mb-4 italic">"Professional, responsive, and results-driven. Evryware delivered our patient management system on time and within budget. Highly recommended."</p>
+              <p className="text-gray-600 mb-4 italic">"Their affordable web and booking solutions has transformed how we managing our clients. It is now effortless, simple yet effective."</p>
               <div>
                 <p className="font-semibold text-evryware">Gloria West</p>
                 <p className="text-sm text-gray-500">A La Carte Cleaning Services</p>
