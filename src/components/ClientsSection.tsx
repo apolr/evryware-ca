@@ -1,10 +1,7 @@
-
 import { Card, CardContent } from "@/components/ui/card";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
-
 const ClientsSection = () => {
-  return (
-    <section id="clients" className="py-20 bg-gray-50">
+  return <section id="clients" className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-semibold text-evryware mb-4">Our Clients</h2>
@@ -18,11 +15,7 @@ const ClientsSection = () => {
           <Card className="border-none shadow-lg hover:shadow-xl transition-all duration-300 bg-white group">
             <CardContent className="p-6">
               <AspectRatio ratio={16 / 9} className="overflow-hidden rounded-lg">
-                <img
-                  src="/lovable-uploads/b0705b9c-c072-4e0b-a4e1-c2c1c67d7cdb.png"
-                  alt="Nigerian Canadian Association logo"
-                  className="w-full h-full object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300 group-hover:scale-105"
-                />
+                <img alt="Nigerian Canadian Association logo" className="w-full h-full object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300 group-hover:scale-105" src="/lovable-uploads/5d6b6964-1856-4fa8-aeb4-3487e6878654.png" />
               </AspectRatio>
             </CardContent>
           </Card>
@@ -31,11 +24,7 @@ const ClientsSection = () => {
           <Card className="border-none shadow-lg hover:shadow-xl transition-all duration-300 bg-white group">
             <CardContent className="p-6">
               <AspectRatio ratio={16 / 9} className="overflow-hidden rounded-lg">
-                <img
-                  src="/lovable-uploads/faed6047-9b8d-4325-826f-38a34c94b229.png"
-                  alt="Hamilton Black Health Community Leaders Forum logo"
-                  className="w-full h-full object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300 group-hover:scale-105"
-                />
+                <img alt="Hamilton Black Health Community Leaders Forum logo" className="w-full h-full object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300 group-hover:scale-105" src="/lovable-uploads/09410051-574c-4c3a-b531-488bfd9126d5.png" />
               </AspectRatio>
             </CardContent>
           </Card>
@@ -44,11 +33,7 @@ const ClientsSection = () => {
           <Card className="border-none shadow-lg hover:shadow-xl transition-all duration-300 bg-white group">
             <CardContent className="p-6">
               <AspectRatio ratio={16 / 9} className="overflow-hidden rounded-lg">
-                <img
-                  src="/lovable-uploads/2e18a537-fa0a-4e06-8f3e-2a821a2778ab.png"
-                  alt="À La Carte Cleaning Services logo"
-                  className="w-full h-full object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300 group-hover:scale-105"
-                />
+                <img alt="À La Carte Cleaning Services logo" className="w-full h-full object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300 group-hover:scale-105" src="/lovable-uploads/1298c255-8c39-4ee1-bf53-df506844834b.png" />
               </AspectRatio>
             </CardContent>
           </Card>
@@ -57,18 +42,12 @@ const ClientsSection = () => {
           <Card className="border-none shadow-lg hover:shadow-xl transition-all duration-300 bg-white group">
             <CardContent className="p-6">
               <AspectRatio ratio={16 / 9} className="overflow-hidden rounded-lg">
-                <img
-                  src="/lovable-uploads/ee604703-160a-41dc-ae54-ec347a869987.png"
-                  alt="Northern Sparkle Media logo"
-                  className="w-full h-full object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300 group-hover:scale-105"
-                />
+                <img alt="Northern Sparkle Media logo" className="w-full h-full object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300 group-hover:scale-105" src="/lovable-uploads/fc3e0b94-f314-4829-8f82-67bdb3d4115d.png" />
               </AspectRatio>
             </CardContent>
           </Card>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default ClientsSection;
