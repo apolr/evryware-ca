@@ -1,6 +1,7 @@
 
 import { Code } from 'lucide-react';
 import { Card, CardContent } from "@/components/ui/card";
+import { AspectRatio } from "@/components/ui/aspect-ratio";
 
 const PortfolioSection = () => {
   const projects = [
@@ -50,12 +51,14 @@ const PortfolioSection = () => {
           {projects.map((project, index) => (
             <Card key={index} className="border-none shadow-lg hover:shadow-xl transition-shadow group cursor-pointer bg-white/95 backdrop-blur-sm">
               <CardContent className="p-6">
-                <div className="h-32 rounded-lg mb-4 overflow-hidden">
-                  <img
-                    src={project.image}
-                    alt={`${project.title} preview`}
-                    className="w-full h-full object-cover"
-                  />
+                <div className="mb-4">
+                  <AspectRatio ratio={16 / 9} className="bg-muted rounded-lg overflow-hidden">
+                    <img
+                      src={project.image}
+                      alt={`${project.title} preview`}
+                      className="w-full h-full object-contain"
+                    />
+                  </AspectRatio>
                 </div>
                 <span className="text-sm text-evryware font-medium">{project.category}</span>
                 <h3 className="text-lg font-semibold mb-2 text-gray-900">{project.title}</h3>
