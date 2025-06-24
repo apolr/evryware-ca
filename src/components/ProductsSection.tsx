@@ -39,7 +39,7 @@ const ProductsSection = () => {
               </div>
             
               <h3 className="text-2xl font-semibold mb-4 text-evryware">evry.ai</h3>
-              <p className="text-gray-600 mb-6">Micro-services such as chatbots, voice-to-text, image tagging, and predictive analytics that seamlessly integrate intelligent features into client's applications.</p>
+              <p className="text-gray-600 mb-6">Add a smart chatbot for instant customer support, auto-tag images for easy product management, summarize documents in seconds, transcribe audio for call centers, and forecast sales to boost your business—all with seamless AI microservices.</p>
               <Button variant="outline" className="border-evryware text-evryware hover:bg-evryware hover:text-white">Coming Soon</Button>
             </CardContent>
           </Card>
