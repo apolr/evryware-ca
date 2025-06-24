@@ -6,6 +6,7 @@ import AboutSection from '../components/AboutSection';
 import ServicesSection from '../components/ServicesSection';
 import ProductsSection from '../components/ProductsSection';
 import PortfolioSection from '../components/PortfolioSection';
+import ClientsSection from '../components/ClientsSection';
 import TestimonialsSection from '../components/TestimonialsSection';
 import ContactSection from '../components/ContactSection';
 import Footer from '../components/Footer';
@@ -25,7 +26,7 @@ const Index = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['hero', 'about', 'services', 'products', 'portfolio', 'testimonials', 'contact'];
+      const sections = ['hero', 'about', 'services', 'products', 'portfolio', 'clients', 'testimonials', 'contact'];
       const scrollPosition = window.scrollY + 100;
 
       for (const section of sections) {
@@ -52,6 +53,7 @@ const Index = () => {
       <ServicesSection />
       <ProductsSection />
       <PortfolioSection />
+      <ClientsSection />
       <TestimonialsSection />
       <ContactSection />
       <Footer />

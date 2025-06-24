@@ -15,6 +15,7 @@ const Header = ({ activeSection, scrollToSection }: HeaderProps) => {
     { id: 'services', label: 'Services' },
     { id: 'products', label: 'Products' },
     { id: 'portfolio', label: 'Portfolio' },
+    { id: 'clients', label: 'Clients' },
     { id: 'testimonials', label: 'Testimonials' },
     { id: 'contact', label: 'Contact' }
   ];
