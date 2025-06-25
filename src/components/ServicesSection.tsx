@@ -4,28 +4,28 @@ import { Card, CardContent } from "@/components/ui/card";
 const ServicesSection = () => {
   const services = [
     {
-      title: "Web Development",
-      description: "Custom websites and web applications built with modern technologies"
+      title: "Custom Web Development",
+      description: "Professional websites and web applications built with modern technologies including React, Node.js, and cloud platforms"
     },
     {
-      title: "Digital Strategy",
-      description: "Strategic planning to align technology with your business goals"
+      title: "Digital Strategy Consulting",
+      description: "Strategic planning and technology roadmaps to align your digital initiatives with business goals and growth objectives"
     },
     {
-      title: "System Integration",
-      description: "Seamlessly connect your existing systems and workflows"
+      title: "System Integration Services",
+      description: "Seamlessly connect your existing systems, databases, and workflows to improve efficiency and data flow"
     },
     {
-      title: "Data Analytics",
-      description: "Transform your data into actionable insights and reports"
+      title: "Data Analytics & Business Intelligence",
+      description: "Transform your business data into actionable insights with custom dashboards, reports, and analytics solutions"
     },
     {
-      title: "Project Management & Consulting",
-      description: "Agile/Scrum and PMI-certified guidance for on-time delivery"
+      title: "Agile Project Management & Consulting",
+      description: "PMI-certified project management with Agile/Scrum methodologies ensuring on-time, on-budget delivery"
     },
     {
-      title: "Support & Maintenance",
-      description: "Ongoing support to keep your systems running smoothly"
+      title: "Ongoing Support & Maintenance",
+      description: "Comprehensive technical support, updates, and maintenance to keep your digital systems running smoothly"
     }
   ];
 
@@ -45,9 +45,9 @@ const ServicesSection = () => {
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-semibold text-white mb-4">Our Services</h2>
+          <h2 className="text-4xl font-semibold text-white mb-4">Our Technology Services</h2>
           <p className="text-xl text-white/90">
-            Comprehensive technology solutions tailored to your needs
+            Comprehensive technology solutions tailored for Ontario businesses and non-profit organizations
           </p>
         </div>
         

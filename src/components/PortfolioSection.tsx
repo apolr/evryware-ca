@@ -1,5 +1,4 @@
 
-import { Code } from 'lucide-react';
 import { Card, CardContent } from "@/components/ui/card";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { Button } from "@/components/ui/button";
@@ -8,24 +7,27 @@ const PortfolioSection = () => {
   const projects = [
     {
       title: "Nigerian Canadian Association, Hamilton",
-      category: "Non-Profit Organization",
-      description: "Community platform celebrating and promoting Nigerian culture and fostering relationships",
+      category: "Non-Profit Organization Website",
+      description: "Community platform celebrating and promoting Nigerian culture and fostering relationships in Hamilton, Ontario",
       image: "/lovable-uploads/b0705b9c-c072-4e0b-a4e1-c2c1c67d7cdb.png",
-      url: "https://ncahamilton.ca/"
+      url: "https://ncahamilton.ca/",
+      alt: "Nigerian Canadian Association Hamilton website homepage showcasing community events and cultural programs"
     },
     {
       title: "Hamilton Black Health Community Leaders Forum",
-      category: "Community Organization",
-      description: "Event coordination and community engagement platform for health initiatives",
+      category: "Community Health Organization",
+      description: "Event coordination and community engagement platform for health initiatives serving Hamilton's Black community",
       image: "/lovable-uploads/faed6047-9b8d-4325-826f-38a34c94b229.png",
-      url: "https://hbhclf.org/"
+      url: "https://hbhclf.org/",
+      alt: "Hamilton Black Health Community Leaders Forum website featuring health resources and community events"
     },
     {
       title: "À La Carte Cleaning Services",
-      category: "Service Business", 
-      description: "Professional cleaning service booking and management system",
+      category: "Service Business Website", 
+      description: "Professional cleaning service booking and management system with online scheduling for Hamilton area clients",
       image: "/lovable-uploads/2e18a537-fa0a-4e06-8f3e-2a821a2778ab.png",
-      url: "https://alacartecleaningservices.com/"
+      url: "https://alacartecleaningservices.com/",
+      alt: "À La Carte Cleaning Services website showing professional cleaning booking system and service options"
     }
   ];
 
@@ -45,9 +47,9 @@ const PortfolioSection = () => {
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-semibold text-evryware mb-4">Portfolio</h2>
+          <h2 className="text-4xl font-semibold text-evryware mb-4">Our Portfolio</h2>
           <p className="text-xl text-gray-700">
-            Recent projects showcasing our expertise
+            Recent web development and digital solution projects showcasing our expertise in Ontario
           </p>
         </div>
         
@@ -59,8 +61,9 @@ const PortfolioSection = () => {
                   <AspectRatio ratio={16 / 9} className="bg-muted rounded-lg overflow-hidden">
                     <img
                       src={project.image}
-                      alt={`${project.title} preview`}
+                      alt={project.alt}
                       className="w-full h-full object-contain"
+                      loading="lazy"
                     />
                   </AspectRatio>
                 </div>
