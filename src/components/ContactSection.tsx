@@ -4,6 +4,11 @@ import XIcon from './icons/XIcon';
 import ConsultationDialog from "./ConsultationDialog";
 
 const ContactSection = () => {
+  const handleEmailClick = () => {
+    const email = 'hello' + '@' + 'evryware.ca';
+    window.location.href = 'mailto:' + email;
+  };
+
   return (
     <section 
       id="contact" 
@@ -49,9 +54,12 @@ const ContactSection = () => {
             <div className="space-y-4">
               <div className="flex items-center">
                 <Mail className="h-5 w-5 mr-3 text-white" aria-hidden="true" />
-                <a href="mailto:hello@evryware.ca" className="text-white hover:text-gray-200">
-                  hello@evryware.ca
-                </a>
+                <button 
+                  onClick={handleEmailClick}
+                  className="text-white hover:text-gray-200 cursor-pointer underline"
+                >
+                  Contact via Email
+                </button>
               </div>
               <div className="flex items-center">
                 <Phone className="h-5 w-5 mr-3 text-white" aria-hidden="true" />

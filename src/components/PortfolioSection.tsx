@@ -64,6 +64,9 @@ const PortfolioSection = () => {
                       alt={project.alt}
                       className="w-full h-full object-contain"
                       loading="lazy"
+                      width="400"
+                      height="225"
+                      decoding="async"
                     />
                   </AspectRatio>
                 </div>
