@@ -5,7 +5,7 @@ const ServicesSection = () => {
   const services = [
     {
       title: "Custom Web Development",
-      description: "Professional websites and web applications built with modern technologies including React, Node.js, and cloud platforms"
+      description: "Professional websites and web applications built with modern technologies"
     },
     {
       title: "Digital Strategy Consulting",
