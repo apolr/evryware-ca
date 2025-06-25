@@ -34,7 +34,7 @@ const AboutSection = () => {
           <Card className="border-none shadow-lg hover:shadow-xl transition-shadow">
             <CardContent className="p-8 text-center">
               <Users className="h-12 w-12 text-evryware mx-auto mb-4" aria-hidden="true" />
-              <h3 className="text-xl font-semibold mb-4">Tailored Solutions</h3>
+              <h3 className="text-xl font-semibold mb-4">Solutions</h3>
               <p className="text-gray-600">
                 Custom approaches that solve real problems for real organizations, from small businesses to large non-profits.
               </p>
