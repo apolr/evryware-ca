@@ -1,25 +1,17 @@
-
 import { Mail, Phone, MapPin, Facebook, Instagram, Linkedin, Youtube } from 'lucide-react';
 import XIcon from './icons/XIcon';
 import ConsultationDialog from "./ConsultationDialog";
-
 const ContactSection = () => {
   const handleEmailClick = () => {
     const email = 'hello' + '@' + 'evryware.ca';
     window.location.href = 'mailto:' + email;
   };
-
-  return (
-    <section 
-      id="contact" 
-      className="py-20 relative" 
-      style={{
-        backgroundImage: `url('/lovable-uploads/f025ab89-dee6-48a0-8e94-99d7dda60936.png')`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat'
-      }}
-    >
+  return <section id="contact" className="py-20 relative" style={{
+    backgroundImage: `url('/lovable-uploads/f025ab89-dee6-48a0-8e94-99d7dda60936.png')`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat'
+  }}>
       {/* Grey overlay for text legibility */}
       <div className="absolute inset-0 bg-gray-600/30"></div>
       
@@ -35,17 +27,10 @@ const ContactSection = () => {
           {/* Google Maps Widget */}
           <div className="w-full">
             <h3 className="text-2xl font-semibold mb-4 text-white">Our Location</h3>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d186419.5734923671!2d-79.97624385000001!3d43.2557!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882c986c27de778f%3A0x3031c3f4430d0d0a!2sHamilton%2C%20ON%2C%20Canada!5e0!3m2!1sen!2sus!4v1703344800000!5m2!1sen!2sus"
-              width="100%"
-              height="300"
-              style={{ border: 0, borderRadius: '8px' }}
-              allowFullScreen
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              title="Evryware Inc. serving Hamilton, Ontario and surrounding areas"
-              className="shadow-lg"
-            ></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d186419.5734923671!2d-79.97624385000001!3d43.2557!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882c986c27de778f%3A0x3031c3f4430d0d0a!2sHamilton%2C%20ON%2C%20Canada!5e0!3m2!1sen!2sus!4v1703344800000!5m2!1sen!2sus" width="100%" height="300" style={{
+            border: 0,
+            borderRadius: '8px'
+          }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="Evryware Inc. serving Hamilton, Ontario and surrounding areas" className="shadow-lg"></iframe>
           </div>
           
           {/* Contact Information */}
@@ -54,10 +39,7 @@ const ContactSection = () => {
             <div className="space-y-4">
               <div className="flex items-center">
                 <Mail className="h-5 w-5 mr-3 text-white" aria-hidden="true" />
-                <button 
-                  onClick={handleEmailClick}
-                  className="text-white hover:text-gray-200 cursor-pointer underline"
-                >
+                <button onClick={handleEmailClick} className="text-white hover:text-gray-200 cursor-pointer underline">
                   Contact via Email
                 </button>
               </div>
@@ -74,49 +56,19 @@ const ContactSection = () => {
               
               {/* Social Media Icons */}
               <div className="flex space-x-4 mt-6">
-                <a 
-                  href="https://www.linkedin.com/company/evryware" 
-                  className="transition-colors duration-300"
-                  aria-label="Follow Evryware on LinkedIn"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <a href="https://www.linkedin.com/company/evryware" className="transition-colors duration-300" aria-label="Follow Evryware on LinkedIn" target="_blank" rel="noopener noreferrer">
                   <Linkedin className="h-6 w-6 text-white hover:text-[#0077B5]" />
                 </a>
-                <a 
-                  href="https://www.facebook.com/evryware" 
-                  className="transition-colors duration-300"
-                  aria-label="Follow Evryware on Facebook"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <a href="https://www.facebook.com/evryware" className="transition-colors duration-300" aria-label="Follow Evryware on Facebook" target="_blank" rel="noopener noreferrer">
                   <Facebook className="h-6 w-6 text-white hover:text-[#1877F2]" />
                 </a>
-                <a 
-                  href="https://twitter.com/evryware" 
-                  className="transition-colors duration-300"
-                  aria-label="Follow Evryware on Twitter"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <a href="https://twitter.com/evryware" className="transition-colors duration-300" aria-label="Follow Evryware on Twitter" target="_blank" rel="noopener noreferrer">
                   <XIcon className="h-6 w-6 text-white hover:text-black" />
                 </a>
-                <a 
-                  href="https://www.youtube.com/@evryware" 
-                  className="transition-colors duration-300"
-                  aria-label="Subscribe to Evryware on YouTube"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <a href="https://www.youtube.com/@evryware" className="transition-colors duration-300" aria-label="Subscribe to Evryware on YouTube" target="_blank" rel="noopener noreferrer">
                   <Youtube className="h-6 w-6 text-white hover:text-[#FF0000]" />
                 </a>
-                <a 
-                  href="https://www.instagram.com/evryware" 
-                  className="transition-colors duration-300"
-                  aria-label="Follow Evryware on Instagram"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <a href="https://www.instagram.com/evryware" className="transition-colors duration-300" aria-label="Follow Evryware on Instagram" target="_blank" rel="noopener noreferrer">
                   <Instagram className="h-6 w-6 text-white hover:text-[#E4405F]" />
                 </a>
               </div>
@@ -125,11 +77,7 @@ const ContactSection = () => {
               <div className="mt-8">
                 <h4 className="text-xl font-semibold mb-4 text-white">Affiliation</h4>
                 <div className="flex justify-center">
-                  <img 
-                    src="/lovable-uploads/1169717a-a2bd-47fb-8474-f2be6c158a68.png"
-                    alt="Hamilton Chamber of Commerce Member"
-                    className="max-w-32 h-auto"
-                  />
+                  <img alt="Hamilton Chamber of Commerce Member" className="max-w-32 h-auto" src="/lovable-uploads/66f47a74-a575-4a31-9e3f-37357168c852.png" />
                 </div>
               </div>
             </div>
@@ -142,15 +90,10 @@ const ContactSection = () => {
               Whether you're a business looking to modernize your operations or a non-profit 
               seeking to amplify your impact in Ontario, we're here to help you find the right digital solution.
             </p>
-            <ConsultationDialog 
-              triggerText="Get a Free Consultation"
-              className="bg-white text-evryware hover:bg-gray-100 px-8 py-3 text-lg group"
-            />
+            <ConsultationDialog triggerText="Get a Free Consultation" className="bg-white text-evryware hover:bg-gray-100 px-8 py-3 text-lg group" />
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default ContactSection;
