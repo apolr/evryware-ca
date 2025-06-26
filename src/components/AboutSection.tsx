@@ -5,9 +5,7 @@ const AboutSection = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-semibold text-evryware mb-4">About Us</h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Your trusted Ontario-based technology partner specializing in smart, simple, and effective digital solutions for businesses and non-profit organizations.
-          </p>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">Your trusted technology partner specializing in smart, simple, and effective digital solutions for businesses and non-profit organizations.</p>
         </div>
         
         <div className="grid md:grid-cols-3 gap-8">
