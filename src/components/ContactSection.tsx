@@ -1,3 +1,4 @@
+
 import { Mail, Phone, MapPin, Facebook, Instagram, Linkedin, Youtube } from 'lucide-react';
 import XIcon from './icons/XIcon';
 import ConsultationDialog from "./ConsultationDialog";
@@ -77,10 +78,10 @@ const ContactSection = () => {
 
           {/* Affiliation Section */}
           <div>
-            <h3 className="text-2xl font-semibold mb-6 text-white">Affiliation</h3>
+            
             <div className="flex justify-start">
               <a href="https://www.hamiltonchamber.ca/member/evryware-inc/" target="_blank" rel="noopener noreferrer" aria-label="Visit Evryware's Hamilton Chamber of Commerce member page">
-                <img alt="Hamilton Chamber of Commerce Member" className="max-w-64 h-auto" src="/lovable-uploads/4e32b896-c17d-448c-b6de-e2f3b7d2f162.png" />
+                <img alt="Hamilton Chamber of Commerce Member" className="max-w-64 h-auto" src="/lovable-uploads/b5ce202a-ebf8-403c-bec0-df32b7d2a440.png" />
               </a>
             </div>
           </div>
