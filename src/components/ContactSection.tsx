@@ -120,6 +120,18 @@ const ContactSection = () => {
                   <Instagram className="h-6 w-6 text-white hover:text-[#E4405F]" />
                 </a>
               </div>
+
+              {/* Affiliation Section */}
+              <div className="mt-8">
+                <h4 className="text-xl font-semibold mb-4 text-white">Affiliation</h4>
+                <div className="flex justify-center">
+                  <img 
+                    src="/lovable-uploads/1169717a-a2bd-47fb-8474-f2be6c158a68.png"
+                    alt="Hamilton Chamber of Commerce Member"
+                    className="max-w-32 h-auto"
+                  />
+                </div>
+              </div>
             </div>
           </div>
           
