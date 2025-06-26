@@ -17,7 +17,7 @@ const ContactSection = () => {
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-semibold mb-4 text-white">Contact Our Ontario Technology Team</h2>
+          <h2 className="text-4xl font-semibold mb-4 text-white">Contact Us</h2>
           <p className="text-xl text-white/90">
             Ready to start your next digital project? Let's discuss how we can help your business or organization thrive.
           </p>
