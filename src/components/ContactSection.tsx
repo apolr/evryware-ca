@@ -77,7 +77,7 @@ const ContactSection = () => {
               <div className="mt-8">
                 <h4 className="text-xl font-semibold mb-4 text-white">Affiliation</h4>
                 <div className="flex justify-center">
-                  <img alt="Hamilton Chamber of Commerce Member" className="max-w-32 h-auto" src="/lovable-uploads/66f47a74-a575-4a31-9e3f-37357168c852.png" />
+                  <img alt="Hamilton Chamber of Commerce Member" className="max-w-32 h-auto" src="/lovable-uploads/b5ce202a-ebf8-403c-bec0-df32b7d2a440.png" />
                 </div>
               </div>
             </div>
