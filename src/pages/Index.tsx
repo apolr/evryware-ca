@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import Header from '../components/Header';
 import HeroSection from '../components/HeroSection';
@@ -45,12 +44,19 @@ const Index = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Add structured data for testimonials
+  // Add structured data for testimonials with aggregateRating
   useEffect(() => {
     const testimonialsSchema = {
       "@context": "https://schema.org",
       "@type": "Organization",
       "name": "Evryware Inc.",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "bestRating": "5",
+        "worstRating": "1",
+        "ratingCount": "3"
+      },
       "review": [
         {
           "@type": "Review",
