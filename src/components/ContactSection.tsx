@@ -1,3 +1,4 @@
+
 import { Mail, Phone, MapPin, Facebook, Instagram, Linkedin, Youtube } from 'lucide-react';
 import XIcon from './icons/XIcon';
 import ConsultationDialog from "./ConsultationDialog";
@@ -23,7 +24,7 @@ const ContactSection = () => {
           </p>
         </div>
         
-        <div className="grid md:grid-cols-3 gap-8 lg:gap-12">
+        <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-8 lg:gap-12">
           {/* Google Maps Widget */}
           <div className="w-full">
             <h3 className="text-2xl font-semibold mb-4 text-white">Our Location</h3>
@@ -72,16 +73,16 @@ const ContactSection = () => {
                   <Instagram className="h-6 w-6 text-white hover:text-[#E4405F]" />
                 </a>
               </div>
+            </div>
+          </div>
 
-              {/* Affiliation Section */}
-              <div className="mt-8">
-                <h4 className="text-xl font-semibold mb-4 text-white">Affiliation</h4>
-                <div className="flex justify-start ">
-                  <a href="https://www.hamiltonchamber.ca/member/evryware-inc/" target="_blank" rel="noopener noreferrer" aria-label="Visit Evryware's Hamilton Chamber of Commerce member page">
-                    <img alt="Hamilton Chamber of Commerce Member" className="max-w-32 h-auto" src="/lovable-uploads/b5ce202a-ebf8-403c-bec0-df32b7d2a440.png" />
-                  </a>
-                </div>
-              </div>
+          {/* Affiliation Section */}
+          <div>
+            <h3 className="text-2xl font-semibold mb-6 text-white">Affiliation</h3>
+            <div className="flex justify-start">
+              <a href="https://www.hamiltonchamber.ca/member/evryware-inc/" target="_blank" rel="noopener noreferrer" aria-label="Visit Evryware's Hamilton Chamber of Commerce member page">
+                <img alt="Hamilton Chamber of Commerce Member" className="max-w-32 h-auto" src="/lovable-uploads/b5ce202a-ebf8-403c-bec0-df32b7d2a440.png" />
+              </a>
             </div>
           </div>
           
