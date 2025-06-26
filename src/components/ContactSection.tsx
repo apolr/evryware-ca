@@ -1,3 +1,4 @@
+
 import { Mail, Phone, MapPin, Facebook, Instagram, Linkedin, Youtube } from 'lucide-react';
 import XIcon from './icons/XIcon';
 import ConsultationDialog from "./ConsultationDialog";
@@ -77,7 +78,9 @@ const ContactSection = () => {
               <div className="mt-8">
                 <h4 className="text-xl font-semibold mb-4 text-white">Affiliation</h4>
                 <div className="flex justify-center">
-                  <img alt="Hamilton Chamber of Commerce Member" className="max-w-32 h-auto" src="/lovable-uploads/b5ce202a-ebf8-403c-bec0-df32b7d2a440.png" />
+                  <a href="https://www.hamiltonchamber.ca/member/evryware-inc/" target="_blank" rel="noopener noreferrer" aria-label="Visit Evryware's Hamilton Chamber of Commerce member page">
+                    <img alt="Hamilton Chamber of Commerce Member" className="max-w-32 h-auto" src="/lovable-uploads/b5ce202a-ebf8-403c-bec0-df32b7d2a440.png" />
+                  </a>
                 </div>
               </div>
             </div>
