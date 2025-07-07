@@ -6,21 +6,21 @@ const PortfolioSection = () => {
     title: "Nigerian Canadian Association, Hamilton",
     category: "Non-Profit Organization Website",
     description: "Community platform celebrating and promoting Nigerian culture and fostering relationships in Hamilton, Ontario",
-    image: "/lovable-uploads/b0705b9c-c072-4e0b-a4e1-c2c1c67d7cdb.png",
+    image: "/images/portfolio/nca-hamilton.jpg",
     url: "https://ncahamilton.ca/",
     alt: "Nigerian Canadian Association Hamilton website homepage showcasing community events and cultural programs"
   }, {
     title: "Hamilton Black Health Community Leaders Forum",
     category: "Community Health Organization",
     description: "Event coordination and community engagement platform for health initiatives serving Hamilton's Black community",
-    image: "/lovable-uploads/faed6047-9b8d-4325-826f-38a34c94b229.png",
+    image: "/images/portfolio/hbhclf.jpg",
     url: "https://hbhclf.org/",
     alt: "Hamilton Black Health Community Leaders Forum website featuring health resources and community events"
   }, {
     title: "À La Carte Cleaning Services",
     category: "Service Business Website",
     description: "Professional cleaning service booking and management system with online scheduling for Hamilton area clients",
-    image: "/lovable-uploads/2e18a537-fa0a-4e06-8f3e-2a821a2778ab.png",
+    image: "/images/portfolio/alacarte-cleaning.jpg",
     url: "https://alacartecleaningservices.com/",
     alt: "À La Carte Cleaning Services website showing professional cleaning booking system and service options"
   }];

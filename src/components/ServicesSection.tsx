@@ -1,36 +1,30 @@
 import { Card, CardContent } from "@/components/ui/card";
-import webDevelopmentImg from "@/assets/web-development.jpg";
-import digitalStrategyImg from "@/assets/digital-strategy.jpg";
-import systemIntegrationImg from "@/assets/system-integration.jpg";
-import dataAnalyticsImg from "@/assets/data-analytics.jpg";
-import projectManagementImg from "@/assets/project-management.jpg";
-import supportMaintenanceImg from "@/assets/support-maintenance.jpg";
 
 const ServicesSection = () => {
   const services = [{
     title: "Custom Web Development",
     description: "Professional websites and web applications built with modern technologies",
-    image: webDevelopmentImg
+    image: "/images/services/web-development.jpg"
   }, {
     title: "Digital Strategy Consulting",
     description: "Strategic planning and technology roadmaps to align your digital initiatives with business goals and growth objectives",
-    image: digitalStrategyImg
+    image: "/images/services/digital-strategy.jpg"
   }, {
     title: "System Integration Services",
     description: "Seamlessly connect your existing systems, databases, and workflows to improve efficiency and data flow",
-    image: systemIntegrationImg
+    image: "/images/services/system-integration.jpg"
   }, {
     title: "Data Analytics & Business Intelligence",
     description: "Transform your business data into actionable insights with custom dashboards, reports, and analytics solutions",
-    image: dataAnalyticsImg
+    image: "/images/services/data-analytics.jpg"
   }, {
     title: "Agile Project Management & Consulting",
     description: "PMI-certified project management with Agile/Scrum methodologies ensuring on-time, on-budget delivery",
-    image: projectManagementImg
+    image: "/images/services/project-management.jpg"
   }, {
     title: "Ongoing Support & Maintenance",
     description: "Comprehensive technical support, updates, and maintenance to keep your digital systems running smoothly",
-    image: supportMaintenanceImg
+    image: "/images/services/support-maintenance.jpg"
   }];
 
   return (
