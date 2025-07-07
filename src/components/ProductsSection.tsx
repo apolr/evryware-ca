@@ -14,7 +14,7 @@ const ProductsSection = () => {
             <div className="aspect-[4/3] overflow-hidden">
                 <img 
                   alt="askPreye product blurb" 
-                  className="w-full h-full object-contain transition-transform duration-300 group-hover:scale-105" 
+                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" 
                   src="/lovable-uploads/743b37b4-67ef-46c4-a6bc-2f1aaa271d30.png" 
                 />
             </div>
@@ -31,7 +31,7 @@ const ProductsSection = () => {
             <div className="aspect-[4/3] overflow-hidden">
                 <img 
                   alt="usékú product blurb" 
-                  className="w-full h-full object-contain transition-transform duration-300 group-hover:scale-105" 
+                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" 
                   src="/lovable-uploads/bcf96d68-4262-41b8-99c3-7a04017d1a6a.png" 
                 />
             </div>
