@@ -1,36 +1,30 @@
 import { Card, CardContent } from "@/components/ui/card";
-import webDevelopmentImg from "@/assets/web-development.jpg";
-import digitalStrategyImg from "@/assets/digital-strategy.jpg";
-import systemIntegrationImg from "@/assets/system-integration.jpg";
-import dataAnalyticsImg from "@/assets/data-analytics.jpg";
-import projectManagementImg from "@/assets/project-management.jpg";
-import supportMaintenanceImg from "@/assets/support-maintenance.jpg";
 
 const ServicesSection = () => {
   const services = [{
     title: "Custom Web Development",
     description: "Professional websites and web applications built with modern technologies",
-    image: webDevelopmentImg
+    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=800&h=600&fit=crop"
   }, {
     title: "Digital Strategy Consulting",
     description: "Strategic planning and technology roadmaps to align your digital initiatives with business goals and growth objectives",
-    image: digitalStrategyImg
+    image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=800&h=600&fit=crop"
   }, {
     title: "System Integration Services",
     description: "Seamlessly connect your existing systems, databases, and workflows to improve efficiency and data flow",
-    image: systemIntegrationImg
+    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&h=600&fit=crop"
   }, {
     title: "Data Analytics & Business Intelligence",
     description: "Transform your business data into actionable insights with custom dashboards, reports, and analytics solutions",
-    image: dataAnalyticsImg
+    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=800&h=600&fit=crop"
   }, {
     title: "Agile Project Management & Consulting",
     description: "PMI-certified project management with Agile/Scrum methodologies ensuring on-time, on-budget delivery",
-    image: projectManagementImg
+    image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=800&h=600&fit=crop"
   }, {
     title: "Ongoing Support & Maintenance",
     description: "Comprehensive technical support, updates, and maintenance to keep your digital systems running smoothly",
-    image: supportMaintenanceImg
+    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&h=600&fit=crop"
   }];
 
   return (
