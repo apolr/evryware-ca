@@ -10,8 +10,8 @@ const ProductsSection = () => {
         </div>
         
         <div className="grid md:grid-cols-2 gap-12">
-          <Card className="group overflow-hidden border border-border bg-card hover:shadow-lg transition-all duration-300 rounded-2xl">
-            <div className="aspect-[4/3] overflow-hidden rounded-t-2xl">
+          <Card className="group overflow-hidden border border-border bg-card hover:shadow-lg transition-all duration-300 rounded-b-2xl">
+            <div className="aspect-[4/3] overflow-hidden">
                 <img 
                   alt="askPreye product blurb" 
                   className="w-full h-full object-contain transition-transform duration-300 group-hover:scale-105" 
@@ -27,8 +27,8 @@ const ProductsSection = () => {
             </CardContent>
           </Card>
           
-          <Card className="group overflow-hidden border border-border bg-card hover:shadow-lg transition-all duration-300 rounded-2xl">
-            <div className="aspect-[4/3] overflow-hidden rounded-t-2xl">
+          <Card className="group overflow-hidden border border-border bg-card hover:shadow-lg transition-all duration-300 rounded-b-2xl">
+            <div className="aspect-[4/3] overflow-hidden">
                 <img 
                   alt="usékú product blurb" 
                   className="w-full h-full object-contain transition-transform duration-300 group-hover:scale-105" 
