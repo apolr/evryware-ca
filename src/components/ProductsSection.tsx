@@ -12,11 +12,11 @@ const ProductsSection = () => {
         <div className="grid md:grid-cols-2 gap-12">
           <Card className="group overflow-hidden border border-border bg-card hover:shadow-lg transition-all duration-300 rounded-2xl">
             <div className="aspect-[4/3] overflow-hidden">
-              <img 
-                alt="askPreye product blurb" 
-                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" 
-                src="/lovable-uploads/743b37b4-67ef-46c4-a6bc-2f1aaa271d30.png" 
-              />
+                <img 
+                  alt="askPreye product blurb" 
+                  className="w-full h-full object-contain transition-transform duration-300 group-hover:scale-105" 
+                  src="/lovable-uploads/743b37b4-67ef-46c4-a6bc-2f1aaa271d30.png" 
+                />
             </div>
             <CardContent className="p-8">
               <h3 className="text-2xl font-semibold mb-4 text-card-foreground">askPreye</h3>
@@ -29,11 +29,11 @@ const ProductsSection = () => {
           
           <Card className="group overflow-hidden border border-border bg-card hover:shadow-lg transition-all duration-300 rounded-2xl">
             <div className="aspect-[4/3] overflow-hidden">
-              <img 
-                alt="usékú product blurb" 
-                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" 
-                src="/lovable-uploads/bcf96d68-4262-41b8-99c3-7a04017d1a6a.png" 
-              />
+                <img 
+                  alt="usékú product blurb" 
+                  className="w-full h-full object-contain transition-transform duration-300 group-hover:scale-105" 
+                  src="/lovable-uploads/bcf96d68-4262-41b8-99c3-7a04017d1a6a.png" 
+                />
             </div>
             <CardContent className="p-8">
               <h3 className="text-2xl font-semibold mb-4 text-card-foreground">evry.ai</h3>
