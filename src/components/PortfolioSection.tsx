@@ -40,7 +40,7 @@ const PortfolioSection = () => {
         </div>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-           {projects.map((project, index) => <Card key={index} className="group overflow-hidden border border-border bg-card hover:shadow-lg transition-all duration-300 rounded-b-2xl">
+          {projects.map((project, index) => <Card key={index} className="group overflow-hidden border border-border bg-card hover:shadow-lg transition-all duration-300 rounded-2xl">
               <div className="aspect-[4/3] overflow-hidden">
                 <img 
                   src={project.image} 
