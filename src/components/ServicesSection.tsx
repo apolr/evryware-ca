@@ -1,48 +1,80 @@
 import { Card, CardContent } from "@/components/ui/card";
+import webDevelopmentImg from "@/assets/web-development.jpg";
+import digitalStrategyImg from "@/assets/digital-strategy.jpg";
+import systemIntegrationImg from "@/assets/system-integration.jpg";
+import dataAnalyticsImg from "@/assets/data-analytics.jpg";
+import projectManagementImg from "@/assets/project-management.jpg";
+import supportMaintenanceImg from "@/assets/support-maintenance.jpg";
+
 const ServicesSection = () => {
   const services = [{
     title: "Custom Web Development",
-    description: "Professional websites and web applications built with modern technologies"
+    description: "Professional websites and web applications built with modern technologies",
+    image: webDevelopmentImg
   }, {
     title: "Digital Strategy Consulting",
-    description: "Strategic planning and technology roadmaps to align your digital initiatives with business goals and growth objectives"
+    description: "Strategic planning and technology roadmaps to align your digital initiatives with business goals and growth objectives",
+    image: digitalStrategyImg
   }, {
     title: "System Integration Services",
-    description: "Seamlessly connect your existing systems, databases, and workflows to improve efficiency and data flow"
+    description: "Seamlessly connect your existing systems, databases, and workflows to improve efficiency and data flow",
+    image: systemIntegrationImg
   }, {
     title: "Data Analytics & Business Intelligence",
-    description: "Transform your business data into actionable insights with custom dashboards, reports, and analytics solutions"
+    description: "Transform your business data into actionable insights with custom dashboards, reports, and analytics solutions",
+    image: dataAnalyticsImg
   }, {
     title: "Agile Project Management & Consulting",
-    description: "PMI-certified project management with Agile/Scrum methodologies ensuring on-time, on-budget delivery"
+    description: "PMI-certified project management with Agile/Scrum methodologies ensuring on-time, on-budget delivery",
+    image: projectManagementImg
   }, {
     title: "Ongoing Support & Maintenance",
-    description: "Comprehensive technical support, updates, and maintenance to keep your digital systems running smoothly"
+    description: "Comprehensive technical support, updates, and maintenance to keep your digital systems running smoothly",
+    image: supportMaintenanceImg
   }];
-  return <section id="services" className="py-20 relative" style={{
-    backgroundImage: `url('/lovable-uploads/a7c74e80-1f65-4a7a-ada4-0a9547e9dfb5.png')`,
-    backgroundSize: 'cover',
-    backgroundPosition: 'center',
-    backgroundRepeat: 'no-repeat'
-  }}>
-      {/* Dark overlay for text legibility */}
-      <div className="absolute inset-0 bg-black/70"></div>
-      
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+
+  return (
+    <section id="services" className="py-20 bg-background">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-semibold text-white mb-4">Our Services</h2>
-          <p className="text-xl text-white/90">Comprehensive technology solutions tailored businesses and non-profit organizations</p>
+          <h2 className="text-4xl font-semibold text-foreground mb-4">Our Services</h2>
+          <p className="text-xl text-muted-foreground">Comprehensive technology solutions tailored for businesses and non-profit organizations</p>
         </div>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {services.map((service, index) => <Card key={index} className="border-none shadow-lg hover:shadow-xl transition-shadow bg-white/95 backdrop-blur-sm">
-              <CardContent className="p-6">
-                <h3 className="text-xl font-semibold mb-3 text-evryware">{service.title}</h3>
-                <p className="text-gray-600">{service.description}</p>
+          {services.map((service, index) => (
+            <Card key={index} className="group overflow-hidden border border-border bg-card hover:shadow-lg transition-all duration-300 rounded-2xl">
+              <div className="aspect-[4/3] overflow-hidden">
+                <img 
+                  src={service.image} 
+                  alt={service.title}
+                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                />
+              </div>
+              <CardContent className="p-8">
+                <h3 className="text-2xl font-semibold mb-4 text-card-foreground">{service.title}</h3>
+                <p className="text-muted-foreground mb-6 leading-relaxed">{service.description}</p>
+                <a 
+                  href="#contact" 
+                  className="inline-flex items-center text-primary font-medium hover:text-primary/80 transition-colors group/link"
+                >
+                  Learn More 
+                  <svg 
+                    className="ml-2 w-4 h-4 transition-transform group-hover/link:translate-x-1" 
+                    fill="none" 
+                    stroke="currentColor" 
+                    viewBox="0 0 24 24"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </a>
               </CardContent>
-            </Card>)}
+            </Card>
+          ))}
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default ServicesSection;
