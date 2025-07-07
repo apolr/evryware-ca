@@ -40,16 +40,22 @@ const PortfolioSection = () => {
         </div>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((project, index) => <Card key={index} className="border-none shadow-lg hover:shadow-xl transition-shadow group cursor-pointer bg-white/95 backdrop-blur-sm">
-              <CardContent className="p-6">
-                <div className="mb-4">
-                  <AspectRatio ratio={16 / 9} className="bg-muted rounded-lg overflow-hidden">
-                    <img src={project.image} alt={project.alt} className="w-full h-full object-contain" loading="lazy" width="400" height="225" decoding="async" />
-                  </AspectRatio>
-                </div>
+          {projects.map((project, index) => <Card key={index} className="group overflow-hidden border border-border bg-card hover:shadow-lg transition-all duration-300 rounded-2xl">
+              <div className="aspect-[4/3] overflow-hidden">
+                <img 
+                  src={project.image} 
+                  alt={project.alt} 
+                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" 
+                  loading="lazy" 
+                  width="400" 
+                  height="300" 
+                  decoding="async" 
+                />
+              </div>
+              <CardContent className="p-8">
                 <span className="text-sm text-evryware font-medium">{project.category}</span>
-                <h3 className="text-lg font-semibold mb-2 text-gray-900">{project.title}</h3>
-                <p className="text-gray-600 text-sm mb-4">{project.description}</p>
+                <h3 className="text-2xl font-semibold mb-4 text-card-foreground">{project.title}</h3>
+                <p className="text-muted-foreground mb-6 leading-relaxed">{project.description}</p>
                 <a href={project.url} target="_blank" rel="noopener noreferrer">
                   <Button variant="outline" size="sm" className="border-evryware text-evryware hover:bg-evryware hover:text-white">
                     View Project
