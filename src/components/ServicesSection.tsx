@@ -53,21 +53,7 @@ const ServicesSection = () => {
               </div>
               <CardContent className="p-8">
                 <h3 className="text-2xl font-semibold mb-4 text-card-foreground">{service.title}</h3>
-                <p className="text-muted-foreground mb-6 leading-relaxed">{service.description}</p>
-                <a 
-                  href="#contact" 
-                  className="inline-flex items-center text-primary font-medium hover:text-primary/80 transition-colors group/link"
-                >
-                  Learn More 
-                  <svg 
-                    className="ml-2 w-4 h-4 transition-transform group-hover/link:translate-x-1" 
-                    fill="none" 
-                    stroke="currentColor" 
-                    viewBox="0 0 24 24"
-                  >
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </a>
+                <p className="text-muted-foreground leading-relaxed">{service.description}</p>
               </CardContent>
             </Card>
           ))}
