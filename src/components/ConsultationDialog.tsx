@@ -12,9 +12,9 @@ const ConsultationDialog = ({ triggerText, className }: ConsultationDialogProps)
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <Button className={className}>
+        <Button className={`${className} bg-[#008000] hover:bg-[#006600] text-white`}>
           {triggerText}
-          <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+          <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform text-white" />
         </Button>
       </DialogTrigger>
       <DialogContent className="sm:max-w-md">
