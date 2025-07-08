@@ -5,7 +5,7 @@ const PortfolioSection = () => {
   const projects = [{
     title: "Nigerian Canadian Association, Hamilton",
     category: "Non-Profit Organization Website",
-    description: "Community platform celebrating and promoting Nigerian culture and fostering relationships in Hamilton, Ontario",
+    description: "A community celebrating and promoting Nigerian culture and fostering relationships in Hamilton, Ontario",
     image: "/lovable-uploads/b0705b9c-c072-4e0b-a4e1-c2c1c67d7cdb.png",
     url: "https://ncahamilton.ca/",
     alt: "Nigerian Canadian Association Hamilton website homepage showcasing community events and cultural programs"
