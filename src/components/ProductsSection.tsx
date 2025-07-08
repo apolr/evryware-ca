@@ -25,7 +25,7 @@ const ProductsSection = () => {
           
           <Card className="group overflow-hidden border border-border bg-card hover:shadow-lg transition-all duration-300 rounded-2xl">
             <div className="aspect-[4/3] overflow-hidden">
-              <img alt="usékú product blurb" className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" src="/lovable-uploads/bcf96d68-4262-41b8-99c3-7a04017d1a6a.png" />
+              <img alt="usékú product blurb" className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" src="/lovable-uploads/35ad82dc-37c2-416a-b64d-c99e3a0c0190.png" />
             </div>
             <CardContent className="p-8">
               <h3 className="text-2xl font-semibold mb-4 text-card-foreground">evry.ai</h3>
