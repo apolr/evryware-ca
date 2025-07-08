@@ -12,7 +12,7 @@ const PortfolioSection = () => {
   }, {
     title: "Hamilton Black Health Community Leaders Forum",
     category: "Community Health Organization",
-    description: "Event coordination and community engagement platform for health initiatives serving Hamilton's Black community",
+    description: "Platform advancing equitable, culturally appropriate health, housing, and employment for Hamilton's African Diaspora.",
     image: "/lovable-uploads/faed6047-9b8d-4325-826f-38a34c94b229.png",
     url: "https://hbhclf.org/",
     alt: "Hamilton Black Health Community Leaders Forum website featuring health resources and community events"
