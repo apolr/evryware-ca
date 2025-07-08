@@ -34,8 +34,16 @@ const ServicesSection = () => {
   }];
 
   return (
-    <section id="services" className="py-20 bg-background">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="services" className="py-20 relative" style={{
+      backgroundImage: `url('/lovable-uploads/fddb7e55-e0cf-4500-b57d-da6c4b62aaa7.png')`,
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      backgroundRepeat: 'no-repeat'
+    }}>
+      {/* Light overlay for text legibility */}
+      <div className="absolute inset-0 bg-white/80"></div>
+      
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-semibold text-foreground mb-4">Our Services</h2>
           <p className="text-xl text-muted-foreground">Comprehensive technology solutions tailored for businesses and non-profit organizations</p>
