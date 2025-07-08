@@ -12,7 +12,7 @@ const ProductsSection = () => {
         <div className="grid md:grid-cols-2 gap-12">
           <Card className="group overflow-hidden border border-border bg-card hover:shadow-lg transition-all duration-300 rounded-2xl">
             <div className="aspect-[4/3] overflow-hidden">
-              <img alt="askPreye product blurb" className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" src="/lovable-uploads/8aafa363-a078-4a23-81a4-b8ac5cd19629.png" />
+              <img alt="askPreye product blurb" src="/lovable-uploads/8aafa363-a078-4a23-81a4-b8ac5cd19629.png" className="w-full h-full transition-transform duration-300 group-hover:scale-105 object-cover" />
             </div>
             <CardContent className="p-8">
               <h3 className="text-2xl font-semibold mb-4 text-card-foreground">askPreye</h3>
