@@ -6,12 +6,7 @@ interface HeroSectionProps {
 const HeroSection = ({
   scrollToSection
 }: HeroSectionProps) => {
-  return <section id="hero" className="pt-16 min-h-screen flex items-center justify-center relative" style={{
-    backgroundImage: `url('/lovable-uploads/3d982da9-686c-4030-8aac-3fb7a2770238.png')`,
-    backgroundSize: 'cover',
-    backgroundPosition: 'center',
-    backgroundRepeat: 'no-repeat'
-  }}>
+  return <section id="hero" className="pt-16 min-h-screen flex items-center justify-center relative hero-background">
       {/* Dark overlay for text legibility */}
       <div className="absolute inset-0 bg-black/50"></div>
       

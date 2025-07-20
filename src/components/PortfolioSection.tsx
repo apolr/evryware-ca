@@ -24,12 +24,7 @@ const PortfolioSection = () => {
     url: "https://alacartecleaningservices.com/",
     alt: "À La Carte Cleaning Services website showing professional cleaning booking system and service options"
   }];
-  return <section id="portfolio" className="py-20 relative" style={{
-    backgroundImage: `url('/lovable-uploads/bed527d0-3fc9-4116-8fcd-ae74817702a0.png')`,
-    backgroundSize: 'cover',
-    backgroundPosition: 'center',
-    backgroundRepeat: 'no-repeat'
-  }}>
+  return <section id="portfolio" className="py-20 relative portfolio-background">
       {/* Light overlay for text legibility */}
       <div className="absolute inset-0 bg-white/80"></div>
       

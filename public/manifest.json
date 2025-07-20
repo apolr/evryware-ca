@@ -1,0 +1,20 @@
+{
+  "name": "Evryware Inc. - Smart Simple Solutions",
+  "short_name": "Evryware",
+  "description": "Leading technology consultancy in Ontario, Canada. Smart, simple digital solutions for businesses and non-profits.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1f2528",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/lovable-uploads/13e615bc-1682-48b6-8aed-95fd9a42131a.png",
+      "sizes": "64x64",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["business", "technology", "consulting"],
+  "lang": "en-CA"
+}

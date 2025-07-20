@@ -9,10 +9,36 @@ const NotFound = () => {
   const location = useLocation();
 
   useEffect(() => {
+    // Update page title for SEO
+    document.title = "404 - Page Not Found | Evryware Inc.";
+    
+    // Add structured data for 404 page
+    const structuredData = {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "404 - Page Not Found",
+      "description": "The requested page could not be found on Evryware Inc. website.",
+      "url": window.location.href,
+      "mainEntity": {
+        "@type": "Organization",
+        "name": "Evryware Inc.",
+        "url": "https://evryware.ca"
+      }
+    };
+    
+    const script = document.createElement('script');
+    script.type = 'application/ld+json';
+    script.textContent = JSON.stringify(structuredData);
+    document.head.appendChild(script);
+    
     console.error(
       "404 Error: User attempted to access non-existent route:",
       location.pathname
     );
+    
+    return () => {
+      document.head.removeChild(script);
+    };
   }, [location.pathname]);
 
   return (

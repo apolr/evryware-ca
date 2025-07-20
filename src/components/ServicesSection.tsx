@@ -34,12 +34,7 @@ const ServicesSection = () => {
   }];
 
   return (
-    <section id="services" className="py-20 relative" style={{
-      backgroundImage: `url('/lovable-uploads/fddb7e55-e0cf-4500-b57d-da6c4b62aaa7.png')`,
-      backgroundSize: 'cover',
-      backgroundPosition: 'center',
-      backgroundRepeat: 'no-repeat'
-    }}>
+    <section id="services" className="py-20 relative services-background">
       {/* Light overlay for text legibility */}
       <div className="absolute inset-0 bg-white/80"></div>
       

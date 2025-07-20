@@ -14,4 +14,15 @@ Allow: /
 User-agent: *
 Allow: /
 
+# Sitemaps
+Sitemap: https://evryware.ca/sitemap.xml
+
+# Crawl-delay for better server performance
+Crawl-delay: 1
+
+# Disallow unnecessary crawling of utility files
+Disallow: /sw.js
+Disallow: /manifest.json
+Disallow: /*.log
+
 Sitemap: https://evryware.ca/sitemap.xml

@@ -19,4 +19,20 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  build: {
+    // Optimize build for performance
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          vendor: ['react', 'react-dom'],
+          ui: ['@radix-ui/react-dialog', '@radix-ui/react-toast'],
+        },
+      },
+    },
+    // Enable compression
+    minify: 'terser',
+    cssMinify: true,
+  },
+  // Image optimization
+  assetsInclude: ['**/*.webp', '**/*.avif'],
 }));

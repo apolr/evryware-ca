@@ -6,12 +6,7 @@ const ContactSection = () => {
     const email = 'hello' + '@' + 'evryware.ca';
     window.location.href = 'mailto:' + email;
   };
-  return <section id="contact" className="py-20 relative" style={{
-    backgroundImage: `url('/lovable-uploads/f025ab89-dee6-48a0-8e94-99d7dda60936.png')`,
-    backgroundSize: 'cover',
-    backgroundPosition: 'center',
-    backgroundRepeat: 'no-repeat'
-  }}>
+  return <section id="contact" className="py-20 relative contact-background">
       {/* Grey overlay for text legibility */}
       <div className="absolute inset-0 bg-gray-600/30"></div>
       
@@ -27,10 +22,7 @@ const ContactSection = () => {
           {/* Google Maps Widget */}
           <div className="w-full">
             <h3 className="text-2xl font-semibold mb-4 text-white">Our Location</h3>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d186419.5734923671!2d-79.97624385000001!3d43.2557!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882c986c27de778f%3A0x3031c3f4430d0d0a!2sHamilton%2C%20ON%2C%20Canada!5e0!3m2!1sen!2sus!4v1703344800000!5m2!1sen!2sus" width="100%" height="300" style={{
-            border: 0,
-            borderRadius: '8px'
-          }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="Evryware Inc. serving Hamilton, Ontario and surrounding areas" className="shadow-lg"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d186419.5734923671!2d-79.97624385000001!3d43.2557!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882c986c27de778f%3A0x3031c3f4430d0d0a!2sHamilton%2C%20ON%2C%20Canada!5e0!3m2!1sen!2sus!4v1703344800000!5m2!1sen!2sus" width="100%" height="300" allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="Evryware Inc. serving Hamilton, Ontario and surrounding areas" className="shadow-lg map-container"></iframe>
           </div>
           
           {/* Contact Information */}

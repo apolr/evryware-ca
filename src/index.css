@@ -101,3 +101,40 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Background images for sections - moved from inline styles for better performance */
+@layer utilities {
+  .hero-background {
+    background-image: url('/lovable-uploads/3d982da9-686c-4030-8aac-3fb7a2770238.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .services-background {
+    background-image: url('/lovable-uploads/fddb7e55-e0cf-4500-b57d-da6c4b62aaa7.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .portfolio-background {
+    background-image: url('/lovable-uploads/bed527d0-3fc9-4116-8fcd-ae74817702a0.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .contact-background {
+    background-image: url('/lovable-uploads/f025ab89-dee6-48a0-8e94-99d7dda60936.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  /* Optimize map iframe */
+  .map-container {
+    border: 0;
+    border-radius: 8px;
+  }
+}
