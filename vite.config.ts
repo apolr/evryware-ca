@@ -29,8 +29,8 @@ export default defineConfig(({ mode }) => ({
         },
       },
     },
-    // Enable compression
-    minify: 'terser',
+    // Enable compression with default esbuild minifier
+    minify: true,
     cssMinify: true,
   },
   // Image optimization
