@@ -97,33 +97,94 @@
     }
     </script>
 
-    <!-- Structured Data - Organization -->
+    <!-- Structured Data - Organization with enhanced details -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Organization",
       "name": "Evryware Inc.",
-      "alternateName": "Evryware",
+      "alternateName": ["Evryware", "Evryware Technology"],
       "url": "https://evryware.ca",
       "logo": "https://evryware.ca/lovable-uploads/13e615bc-1682-48b6-8aed-95fd9a42131a.png",
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "telephone": "+1-437-556-4546",
-        "contactType": "customer service",
-        "email": "hello@evryware.ca",
-        "availableLanguage": "English"
-      },
+      "image": "https://evryware.ca/lovable-uploads/3d982da9-686c-4030-8aac-3fb7a2770238.png",
+      "description": "Evryware Inc. is a leading Ontario-based technology consultancy providing smart, simple digital solutions for businesses and non-profits. We specialize in Digital Transformation, Product Development, Project Management, and AI Consultancy.",
+      "foundingDate": "2020",
+      "slogan": "Smart. Simple. Solutions.",
+      "knowsAbout": ["Web Development", "Digital Transformation", "AI Consultancy", "Project Management", "System Integration", "Product Development"],
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "telephone": "+1-437-556-4546",
+          "contactType": "customer service",
+          "email": "hello@evryware.ca",
+          "availableLanguage": "English",
+          "areaServed": "CA"
+        },
+        {
+          "@type": "ContactPoint",
+          "telephone": "+1-437-556-4546",
+          "contactType": "sales",
+          "email": "hello@evryware.ca",
+          "availableLanguage": "English"
+        }
+      ],
       "address": {
         "@type": "PostalAddress",
         "addressRegion": "Ontario",
         "addressCountry": "CA"
-      },
-      "foundingDate": "2020",
-      "slogan": "Smart. Simple. Solutions."
+      }
     }
     </script>
 
-    <!-- Structured Data - Professional Services -->
+    <!-- Structured Data - WebSite with SearchAction for Sitelinks -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Evryware Inc.",
+      "alternateName": "Evryware",
+      "url": "https://evryware.ca",
+      "description": "Smart, simple digital solutions for businesses and non-profits",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Evryware Inc."
+      }
+    }
+    </script>
+
+    <!-- Structured Data - BreadcrumbList for navigation -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://evryware.ca/"},
+        {"@type": "ListItem", "position": 2, "name": "About Us", "item": "https://evryware.ca/#about"},
+        {"@type": "ListItem", "position": 3, "name": "Services", "item": "https://evryware.ca/#services"},
+        {"@type": "ListItem", "position": 4, "name": "Products", "item": "https://evryware.ca/#products"},
+        {"@type": "ListItem", "position": 5, "name": "Portfolio", "item": "https://evryware.ca/#portfolio"},
+        {"@type": "ListItem", "position": 6, "name": "Contact", "item": "https://evryware.ca/#contact"}
+      ]
+    }
+    </script>
+
+    <!-- Structured Data - SiteNavigationElement for Sitelinks -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SiteNavigationElement",
+      "name": "Main Navigation",
+      "hasPart": [
+        {"@type": "WebPage", "name": "About Us", "url": "https://evryware.ca/#about", "description": "Learn about Evryware's mission: Smart, Simple, Solutions for businesses and non-profits"},
+        {"@type": "WebPage", "name": "Services", "url": "https://evryware.ca/#services", "description": "Digital Transformation, Product Development, Project Management, AI Consultancy"},
+        {"@type": "WebPage", "name": "Products", "url": "https://evryware.ca/#products", "description": "askPreye, EventPilot, evry.ai - Innovative business solutions"},
+        {"@type": "WebPage", "name": "Portfolio", "url": "https://evryware.ca/#portfolio", "description": "View our successful client projects and case studies"},
+        {"@type": "WebPage", "name": "Contact", "url": "https://evryware.ca/#contact", "description": "Get in touch: hello@evryware.ca | +1-437-556-4546"}
+      ]
+    }
+    </script>
+
+    <!-- Structured Data - Professional Services with detailed offerings -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -143,36 +204,121 @@
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
-              "name": "Web Development",
-              "description": "Custom websites and web applications built with modern technologies"
+              "name": "Digital Transformation",
+              "description": "System Audits and Workflow Optimization - We help you work smarter with streamlined processes"
             }
           },
           {
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
-              "name": "Digital Strategy",
-              "description": "Strategic planning to align technology with your business goals"
+              "name": "Product Development",
+              "description": "Minimum Lovable Product (MLP) - Fast prototyping to get your ideas to market quickly"
             }
           },
           {
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
-              "name": "System Integration",
-              "description": "Seamlessly connect your existing systems and workflows"
+              "name": "Project Management",
+              "description": "Lean, Iterative Deployment - Keep your projects on track with Agile methodologies"
             }
           },
           {
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
-              "name": "Project Management & Consulting",
-              "description": "Agile/Scrum and PMI-certified guidance for on-time delivery"
+              "name": "AI Consultancy",
+              "description": "Readiness Audit, Adoption Strategy, Automation - Practical AI solutions that deliver results"
             }
           }
         ]
       }
+    }
+    </script>
+
+    <!-- Structured Data - Products -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "name": "Evryware Products",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "SoftwareApplication",
+            "name": "askPreye",
+            "description": "Smart afrocentric concierge - Shop African groceries, book professional services, cargo goods, and earn rewards",
+            "url": "https://www.askpreye.com",
+            "applicationCategory": "BusinessApplication"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "SoftwareApplication",
+            "name": "EventPilot",
+            "description": "Multi-tenant platform for managing international events, visa applications, and participant workflows",
+            "url": "https://eventpilot.sureguy.ca/",
+            "applicationCategory": "BusinessApplication"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "SoftwareApplication",
+            "name": "evry.ai",
+            "description": "AI micro-services for chatbots, image tagging, document summarization, audio transcription, and sales forecasting",
+            "applicationCategory": "BusinessApplication"
+          }
+        }
+      ]
+    }
+    </script>
+
+    <!-- Structured Data - FAQPage for rich snippets -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What services does Evryware offer?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Evryware offers Digital Transformation (System Audits and Workflow Optimization), Product Development (Minimum Lovable Products), Project Management (Lean and Iterative Deployment), and AI Consultancy (Readiness Audits, Adoption Strategy, and Automation)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How can I contact Evryware?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You can reach Evryware by email at hello@evryware.ca or by phone at +1-437-556-4546. We are based in Ontario, Canada and serve businesses across the region."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What products does Evryware offer?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Evryware offers three main products: askPreye (a smart afrocentric concierge platform), EventPilot (event and visa management platform), and evry.ai (AI micro-services for businesses)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is Evryware's approach to technology?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Evryware follows the 'Smart. Simple. Solutions.' philosophy - providing intelligent design with strategic thinking, cutting through complexity for user-friendly solutions, and delivering custom approaches that solve real problems for businesses and non-profits."
+          }
+        }
+      ]
     }
     </script>
   </head>
