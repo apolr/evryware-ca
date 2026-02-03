@@ -14,13 +14,7 @@ const AboutSection = () => {
           </Card>
           
           <Card className="border-none shadow-lg hover:shadow-xl transition-shadow">
-            <CardContent className="p-8 text-center">
-              <Code className="h-12 w-12 text-evryware mx-auto mb-4" aria-hidden="true" />
-              <h3 className="text-xl font-semibold mb-4">Simple</h3>
-              <p className="text-gray-600">
-                We cut through complexity to deliver solutions that are intuitive, user-friendly, and easy to maintain.
-              </p>
-            </CardContent>
+            
           </Card>
           
           <Card className="border-none shadow-lg hover:shadow-xl transition-shadow">
