@@ -19,7 +19,7 @@ const HeroSection = ({
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <ConsultationDialog triggerText="Get a Free Consultation" className="bg-evryware hover:bg-evryware-dark text-white px-8 py-3 text-lg group shadow-lg" />
+            <ConsultationDialog triggerText="Get a Free Consultation" className="!bg-[#22C55E] hover:!bg-[#16A34A] text-white px-8 py-3 text-lg group shadow-lg" />
             
             <Button onClick={() => scrollToSection('services')} variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-evryware px-8 py-3 text-lg backdrop-blur-sm bg-white/10 shadow-lg">
               Our Services

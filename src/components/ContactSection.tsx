@@ -81,7 +81,7 @@ const ContactSection = () => {
           <div>
             <h3 className="text-2xl font-semibold mb-6 text-white">Let's Do Business</h3>
             <p className="text-white/90 mb-6">Whether you're a business looking to modernize your operations or a non-profit seeking to amplify your impact, we're here to help you find the right digital solution.</p>
-            <ConsultationDialog triggerText="Get a Free Consultation" className="bg-white text-evryware hover:bg-gray-100 px-8 py-3 text-lg group" />
+            <ConsultationDialog triggerText="Get a Free Consultation" className="!bg-[#22C55E] hover:!bg-[#16A34A] text-white px-8 py-3 text-lg group" />
           </div>
         </div>
       </div>
