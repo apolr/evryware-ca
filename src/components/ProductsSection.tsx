@@ -31,7 +31,7 @@ const ProductsSection = () => {
               <h3 className="text-2xl font-semibold mb-4 text-card-foreground">EventPilot</h3>
               <p className="text-muted-foreground mb-6 leading-relaxed">A comprehensive multi-tenant platform for managing international events, visa applications, and participant workflows. Features enterprise-grade security with role-based access control, streamlined registration, and complete audit logging.</p>
               <a href="https://eventpilot.sureguy.ca/" target="_blank" rel="noopener noreferrer">
-                <Button variant="outline" className="border-evryware text-evryware hover:bg-evryware hover:text-white">Curious? Learn More</Button>
+                <Button variant="outline" className="border-evryware text-evryware hover:bg-evryware hover:text-white">Learn More</Button>
               </a>
             </CardContent>
           </Card>
