@@ -9,7 +9,7 @@ const ProductsSection = () => {
           <p className="text-xl text-gray-600">Innovative solutions for common business challenges</p>
         </div>
         
-        <div className="grid md:grid-cols-2 gap-12">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12">
           <Card className="group overflow-hidden border border-border bg-card hover:shadow-lg transition-all duration-300 rounded-2xl">
             <div className="aspect-[4/3] overflow-hidden">
               <img alt="askPreye product blurb" src="/lovable-uploads/8aafa363-a078-4a23-81a4-b8ac5cd19629.png" className="w-full h-full transition-transform duration-300 group-hover:scale-105 object-cover" />
@@ -25,7 +25,20 @@ const ProductsSection = () => {
           
           <Card className="group overflow-hidden border border-border bg-card hover:shadow-lg transition-all duration-300 rounded-2xl">
             <div className="aspect-[4/3] overflow-hidden">
-              <img alt="usékú product blurb" className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" src="/lovable-uploads/35ad82dc-37c2-416a-b64d-c99e3a0c0190.png" />
+              <img alt="EventPilot product blurb" className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" src="/lovable-uploads/eventpilot-landing.png" />
+            </div>
+            <CardContent className="p-8">
+              <h3 className="text-2xl font-semibold mb-4 text-card-foreground">EventPilot</h3>
+              <p className="text-muted-foreground mb-6 leading-relaxed">A comprehensive multi-tenant platform for managing international events, visa applications, and participant workflows. Features enterprise-grade security with role-based access control, streamlined registration, and complete audit logging.</p>
+              <a href="https://eventpilot.sureguy.ca/" target="_blank" rel="noopener noreferrer">
+                <Button variant="outline" className="border-evryware text-evryware hover:bg-evryware hover:text-white">Curious? Learn More</Button>
+              </a>
+            </CardContent>
+          </Card>
+          
+          <Card className="group overflow-hidden border border-border bg-card hover:shadow-lg transition-all duration-300 rounded-2xl">
+            <div className="aspect-[4/3] overflow-hidden">
+              <img alt="evry.ai product blurb" className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" src="/lovable-uploads/35ad82dc-37c2-416a-b64d-c99e3a0c0190.png" />
             </div>
             <CardContent className="p-8">
               <h3 className="text-2xl font-semibold mb-4 text-card-foreground">evry.ai</h3>
