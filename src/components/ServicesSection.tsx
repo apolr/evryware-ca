@@ -1,36 +1,30 @@
 import { Card, CardContent } from "@/components/ui/card";
-import webDevelopmentImg from "@/assets/web-development.jpg";
-import digitalStrategyImg from "@/assets/digital-strategy.jpg";
-import systemIntegrationImg from "@/assets/system-integration.jpg";
-import dataAnalyticsImg from "@/assets/data-analytics.jpg";
-import projectManagementImg from "@/assets/project-management.jpg";
-import supportMaintenanceImg from "@/assets/support-maintenance.jpg";
+import digitalTransformationImg from "@/assets/digital-transformation.jpg";
+import productDevelopmentImg from "@/assets/product-development.jpg";
+import projectManagementImg from "@/assets/project-management-new.jpg";
+import aiConsultancyImg from "@/assets/ai-consultancy.jpg";
 
 const ServicesSection = () => {
   const services = [{
-    title: "Custom Web Development",
-    description: "Professional websites and web applications built with modern technologies",
-    image: webDevelopmentImg
+    title: "Digital Transformation",
+    subtitle: "System Audits and Workflow Optimization",
+    description: "We help you work smarter, not harder. We review how your business operates, spot what's slowing you down, and fix it. From outdated systems to inefficient processes, we streamline everything so your team can focus on what matters most.",
+    image: digitalTransformationImg
   }, {
-    title: "Digital Strategy Consulting",
-    description: "Strategic planning and technology roadmaps to align your digital initiatives with business goals and growth objectives",
-    image: digitalStrategyImg
+    title: "Product Development",
+    subtitle: "Minimum Lovable Product (MLP)",
+    description: "Got an idea? We build it fast. We build Minimum Lovable Products - the early versions of your product with just enough features to test with real users. This gets you to market quickly, saves money, and helps you learn what works before investing big.",
+    image: productDevelopmentImg
   }, {
-    title: "System Integration Services",
-    description: "Seamlessly connect your existing systems, databases, and workflows to improve efficiency and data flow",
-    image: systemIntegrationImg
-  }, {
-    title: "Data Analytics & Business Intelligence",
-    description: "Transform your business data into actionable insights with custom dashboards, reports, and analytics solutions",
-    image: dataAnalyticsImg
-  }, {
-    title: "Agile Project Management & Consulting",
-    description: "PMI-certified project management with Agile/Scrum methodologies ensuring on-time, on-budget delivery",
+    title: "Project Management",
+    subtitle: "Lean | Iterative | Deployment",
+    description: "We keep your projects on track, no matter how complex. Whether you're building traditional software, AI systems, or anything in between, we manage timelines, budgets, and teams. We also make sure your AI is ethical and your data is secure.",
     image: projectManagementImg
   }, {
-    title: "Ongoing Support & Maintenance",
-    description: "Comprehensive technical support, updates, and maintenance to keep your digital systems running smoothly",
-    image: supportMaintenanceImg
+    title: "AI Consultancy",
+    subtitle: "Readiness Audit | Adoption Strategy | Automation",
+    description: "AI is everywhere, but where do you start? We help you figure out if you're ready for AI, what it can do for your business, and how to use it safely. From smart chatbots to automated workflows, we guide you through adopting AI that actually delivers results.",
+    image: aiConsultancyImg
   }];
 
   return (
@@ -44,7 +38,7 @@ const ServicesSection = () => {
           <p className="text-xl text-muted-foreground">Comprehensive technology solutions tailored for businesses and non-profit organizations</p>
         </div>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 gap-8">
           {services.map((service, index) => (
             <Card key={index} className="group overflow-hidden border border-border bg-card hover:shadow-lg transition-all duration-300 rounded-2xl">
               <div className="aspect-[4/3] overflow-hidden">
@@ -55,7 +49,8 @@ const ServicesSection = () => {
                 />
               </div>
               <CardContent className="p-8">
-                <h3 className="text-2xl font-semibold mb-4 text-card-foreground">{service.title}</h3>
+                <h3 className="text-2xl font-semibold mb-2 text-card-foreground">{service.title}</h3>
+                <p className="text-sm font-medium text-primary mb-4">{service.subtitle}</p>
                 <p className="text-muted-foreground leading-relaxed">{service.description}</p>
               </CardContent>
             </Card>
