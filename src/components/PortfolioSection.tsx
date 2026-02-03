@@ -23,6 +23,20 @@ const PortfolioSection = () => {
     image: "/lovable-uploads/2e18a537-fa0a-4e06-8f3e-2a821a2778ab.png",
     url: "https://alacartecleaningservices.com/",
     alt: "À La Carte Cleaning Services website showing professional cleaning booking system and service options"
+  }, {
+    title: "DAM Reports",
+    category: "SaaS Property Measurement Platform",
+    description: "AI-powered roof and property measurement platform delivering professional PDF reports with satellite-based accuracy, 24-hour delivery, and 100% satisfaction guarantee.",
+    image: "/lovable-uploads/damreports-landing.png",
+    url: "https://damreports.com/",
+    alt: "DAM Reports website showing digital automated measurement platform for roof sketches and property reports"
+  }, {
+    title: "My Work Desk",
+    category: "Productivity & Task Management",
+    description: "A streamlined workspace application for managing tasks and boosting team productivity with an intuitive interface and secure authentication.",
+    image: "/lovable-uploads/mywrkdesk-landing.png",
+    url: "https://mywrkdesk.com/",
+    alt: "My Work Desk application login page showcasing task management platform"
   }];
   return <section id="portfolio" className="py-20 relative portfolio-background">
       {/* Light overlay for text legibility */}

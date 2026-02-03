@@ -46,6 +46,24 @@ const ClientsSection = () => {
               </AspectRatio>
             </CardContent>
           </Card>
+
+          {/* Brisk Systems Limited */}
+          <Card className="border-none shadow-lg hover:shadow-xl transition-all duration-300 bg-white group">
+            <CardContent className="p-6">
+              <AspectRatio ratio={16 / 9} className="overflow-hidden rounded-lg">
+                <img alt="Brisk Systems Limited logo" className="w-full h-full object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300 group-hover:scale-105" src="/lovable-uploads/brisk-systems-logo.jpeg" />
+              </AspectRatio>
+            </CardContent>
+          </Card>
+
+          {/* 4syt Technologies */}
+          <Card className="border-none shadow-lg hover:shadow-xl transition-all duration-300 bg-white group">
+            <CardContent className="p-6">
+              <AspectRatio ratio={16 / 9} className="overflow-hidden rounded-lg">
+                <img alt="4syt Technologies logo" className="w-full h-full object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300 group-hover:scale-105" src="/lovable-uploads/4syt-technologies-logo.jpg" />
+              </AspectRatio>
+            </CardContent>
+          </Card>
         </div>
       </div>
     </section>;
