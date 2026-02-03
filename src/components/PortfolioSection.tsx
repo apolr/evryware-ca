@@ -17,13 +17,6 @@ const PortfolioSection = () => {
     url: "https://hbhclf.org/",
     alt: "Hamilton Black Health Community Leaders Forum website featuring health resources and community events"
   }, {
-    title: "À La Carte Cleaning Services",
-    category: "Service Business Website",
-    description: "Professional cleaning service booking and management system with online scheduling for Hamilton area clients",
-    image: "/lovable-uploads/2e18a537-fa0a-4e06-8f3e-2a821a2778ab.png",
-    url: "https://alacartecleaningservices.com/",
-    alt: "À La Carte Cleaning Services website showing professional cleaning booking system and service options"
-  }, {
     title: "DAM Reports",
     category: "SaaS Property Measurement Platform",
     description: "AI-powered roof and property measurement platform delivering professional PDF reports with satellite-based accuracy, 24-hour delivery, and 100% satisfaction guarantee.",

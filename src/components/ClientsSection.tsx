@@ -28,16 +28,6 @@ const ClientsSection = () => {
               </AspectRatio>
             </CardContent>
           </Card>
-
-          {/* À La Carte Cleaning Services */}
-          <Card className="border-none shadow-lg hover:shadow-xl transition-all duration-300 bg-white group">
-            <CardContent className="p-6">
-              <AspectRatio ratio={16 / 9} className="overflow-hidden rounded-lg">
-                <img alt="À La Carte Cleaning Services logo" className="w-full h-full object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300 group-hover:scale-105" src="/lovable-uploads/1298c255-8c39-4ee1-bf53-df506844834b.png" />
-              </AspectRatio>
-            </CardContent>
-          </Card>
-
           {/* Northern Sparkle Media */}
           <Card className="border-none shadow-lg hover:shadow-xl transition-all duration-300 bg-white group">
             <CardContent className="p-6">
