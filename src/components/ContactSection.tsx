@@ -1,5 +1,4 @@
-import { Mail, Phone, MapPin, Facebook, Instagram, Linkedin, Youtube } from 'lucide-react';
-import XIcon from './icons/XIcon';
+import { Mail, Phone, MapPin, Instagram, Linkedin } from 'lucide-react';
 import ConsultationDialog from "./ConsultationDialog";
 const ContactSection = () => {
   const handleEmailClick = () => {
@@ -50,15 +49,6 @@ const ContactSection = () => {
               <div className="flex space-x-4 mt-6">
                 <a href="https://www.linkedin.com/company/evryware-inc/" className="transition-colors duration-300" aria-label="Follow Evryware on LinkedIn" target="_blank" rel="noopener noreferrer">
                   <Linkedin className="h-6 w-6 text-white hover:text-[#0077B5]" />
-                </a>
-                <a href="https://www.facebook.com/" className="transition-colors duration-300" aria-label="Follow Evryware on Facebook" target="_blank" rel="noopener noreferrer">
-                  <Facebook className="h-6 w-6 text-white hover:text-[#1877F2]" />
-                </a>
-                <a href="https://twitter.com/" className="transition-colors duration-300" aria-label="Follow Evryware on Twitter" target="_blank" rel="noopener noreferrer">
-                  <XIcon className="h-6 w-6 text-white hover:text-black" />
-                </a>
-                <a href="https://www.youtube.com/" className="transition-colors duration-300" aria-label="Subscribe to Evryware on YouTube" target="_blank" rel="noopener noreferrer">
-                  <Youtube className="h-6 w-6 text-white hover:text-[#FF0000]" />
                 </a>
                 <a href="https://www.instagram.com/" className="transition-colors duration-300" aria-label="Follow Evryware on Instagram" target="_blank" rel="noopener noreferrer">
                   <Instagram className="h-6 w-6 text-white hover:text-[#E4405F]" />
