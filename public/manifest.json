@@ -9,9 +9,9 @@
   "orientation": "portrait-primary",
   "icons": [
     {
-      "src": "/lovable-uploads/13e615bc-1682-48b6-8aed-95fd9a42131a.png",
+      "src": "/favicon.ico?v=2",
       "sizes": "64x64",
-      "type": "image/png",
+      "type": "image/x-icon",
       "purpose": "any maskable"
     }
   ],
