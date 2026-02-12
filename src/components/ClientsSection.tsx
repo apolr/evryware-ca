@@ -20,11 +20,11 @@ const ClientsSection = () => {
           </CardContent>
         </Card>
 
-        {/* Hamilton Black Health Community Leaders Forum */}
+        {/* Northern Sparkle Media */}
         <Card className="border-none shadow-lg hover:shadow-xl transition-all duration-300 bg-white group">
           <CardContent className="p-6">
             <AspectRatio ratio={16 / 9} className="overflow-hidden rounded-lg">
-              <img alt="Hamilton Black Health Community Leaders Forum logo" className="w-full h-full object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300 group-hover:scale-105" src="/lovable-uploads/09410051-574c-4c3a-b531-488bfd9126d5.png" />
+              <img alt="Northern Sparkle Media logo" className="w-full h-full object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300 group-hover:scale-105" src="/lovable-uploads/09410051-574c-4c3a-b531-488bfd9126d5.png" />
             </AspectRatio>
           </CardContent>
         </Card>
@@ -34,15 +34,6 @@ const ClientsSection = () => {
           <CardContent className="p-6">
             <AspectRatio ratio={16 / 9} className="overflow-hidden rounded-lg">
               <img alt="À La Carte Cleaning Services logo" className="w-full h-full object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300 group-hover:scale-105" src="/lovable-uploads/1298c255-8c39-4ee1-bf53-df506844834b.png" />
-            </AspectRatio>
-          </CardContent>
-        </Card>
-
-        {/* Northern Sparkle Media */}
-        <Card className="border-none shadow-lg hover:shadow-xl transition-all duration-300 bg-white group">
-          <CardContent className="p-6">
-            <AspectRatio ratio={16 / 9} className="overflow-hidden rounded-lg">
-              <img alt="Northern Sparkle Media logo" className="w-full h-full object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300 group-hover:scale-105" src="/lovable-uploads/fc3e0b94-f314-4829-8f82-67bdb3d4115d.png" />
             </AspectRatio>
           </CardContent>
         </Card>
