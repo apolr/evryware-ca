@@ -40,8 +40,8 @@ const Header = ({ activeSection, scrollToSection }: HeaderProps) => {
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className={`text-sm font-medium transition-colors hover:text-evryware ${
-                  activeSection === item.id ? 'text-evryware' : 'text-gray-600'
+                className={`text-sm font-medium transition-colors hover:text-evryware pb-1 ${
+                  activeSection === item.id ? 'text-evryware border-b-2 border-evryware' : 'text-gray-600'
                 }`}
               >
                 {item.label}
@@ -53,6 +53,8 @@ const Header = ({ activeSection, scrollToSection }: HeaderProps) => {
           <button 
             className="md:hidden" 
             onClick={() => setIsMenuOpen(!isMenuOpen)}
+            aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
+            aria-expanded={isMenuOpen}
           >
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>

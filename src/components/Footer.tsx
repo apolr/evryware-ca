@@ -8,7 +8,7 @@ const Footer = () => {
             evryware
           </div>
           <div className="text-sm opacity-75">
-            © 2025 Evryware Inc. All rights reserved.
+            © {new Date().getFullYear()} Evryware Inc. All rights reserved.
           </div>
         </div>
       </div>

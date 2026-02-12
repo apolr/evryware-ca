@@ -9,19 +9,19 @@ const TestimonialsSection = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl font-semibold text-evryware mb-4">Testimonials</h2>
           <p className="text-xl text-gray-600">What our Clients say about working with us
-</p>
+          </p>
         </div>
-        
+
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* First Testimonial */}
           <Card className="border-none shadow-lg">
             <CardContent className="p-6">
-              <div className="flex mb-4">
-                <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-                <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-                <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-                <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-                <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+              <div className="flex mb-4" role="img" aria-label="5 out of 5 stars">
+                <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" aria-hidden="true" />
+                <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" aria-hidden="true" />
+                <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" aria-hidden="true" />
+                <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" aria-hidden="true" />
+                <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" aria-hidden="true" />
               </div>
               <p className="text-gray-600 mb-4 italic">"Evryware expertly guided our Agile project, ensuring clear communication and timely delivery. Their professionalism made a complex process smooth and effective."</p>
               <div>
@@ -34,12 +34,12 @@ const TestimonialsSection = () => {
           {/* Second Testimonial */}
           <Card className="border-none shadow-lg">
             <CardContent className="p-6">
-              <div className="flex mb-4">
-                <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-                <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-                <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-                <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-                <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+              <div className="flex mb-4" role="img" aria-label="5 out of 5 stars">
+                <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" aria-hidden="true" />
+                <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" aria-hidden="true" />
+                <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" aria-hidden="true" />
+                <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" aria-hidden="true" />
+                <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" aria-hidden="true" />
               </div>
               <p className="text-gray-600 mb-4 italic">"They delivered stunning graphics, a user-friendly website, and seamlessly integrated our newsletter and event registration. Their ongoing tech support is reliable and efficient—exactly what we needed."</p>
               <div>
@@ -52,12 +52,12 @@ const TestimonialsSection = () => {
           {/* Third Testimonial */}
           <Card className="border-none shadow-lg">
             <CardContent className="p-6">
-              <div className="flex mb-4">
-                <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-                <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-                <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-                <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-                <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+              <div className="flex mb-4" role="img" aria-label="5 out of 5 stars">
+                <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" aria-hidden="true" />
+                <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" aria-hidden="true" />
+                <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" aria-hidden="true" />
+                <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" aria-hidden="true" />
+                <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" aria-hidden="true" />
               </div>
               <p className="text-gray-600 mb-4 italic">"Their affordable web and booking solutions has transformed how we managing our clients. It is now effortless, simple yet effective."</p>
               <div>

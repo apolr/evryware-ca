@@ -1,10 +1,25 @@
 import { Card, CardContent } from "@/components/ui/card";
+import { useState } from "react";
 import digitalTransformationImg from "@/assets/digital-transformation.jpg";
 import productDevelopmentImg from "@/assets/product-development.jpg";
 import projectManagementImg from "@/assets/project-management-new.jpg";
 import aiConsultancyImg from "@/assets/ai-consultancy.jpg";
 
 const ServicesSection = () => {
+  const [expandedCards, setExpandedCards] = useState<Set<number>>(new Set());
+
+  const toggleCard = (index: number) => {
+    setExpandedCards(prev => {
+      const next = new Set(prev);
+      if (next.has(index)) {
+        next.delete(index);
+      } else {
+        next.add(index);
+      }
+      return next;
+    });
+  };
+
   const services = [{
     title: "Digital Transformation",
     subtitle: "System Audits and Workflow Optimization",
@@ -31,19 +46,19 @@ const ServicesSection = () => {
     <section id="services" className="py-20 relative services-background">
       {/* Light overlay for text legibility */}
       <div className="absolute inset-0 bg-white/80"></div>
-      
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-semibold text-foreground mb-4">Our Services</h2>
           <p className="text-xl text-muted-foreground">Comprehensive technology solutions tailored for businesses and non-profit organizations</p>
         </div>
-        
+
         <div className="grid md:grid-cols-2 gap-8">
           {services.map((service, index) => (
             <Card key={index} className="group overflow-hidden border border-border bg-card hover:shadow-lg transition-all duration-300 rounded-2xl">
               <div className="aspect-[4/3] overflow-hidden">
-                <img 
-                  src={service.image} 
+                <img
+                  src={service.image}
                   alt={service.title}
                   className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                 />
@@ -51,7 +66,20 @@ const ServicesSection = () => {
               <CardContent className="p-8">
                 <h3 className="text-2xl font-semibold mb-2 text-card-foreground">{service.title}</h3>
                 <p className="text-sm font-medium text-primary mb-4">{service.subtitle}</p>
-                <p className="text-muted-foreground leading-relaxed">{service.description}</p>
+                {/* Desktop: show full text. Mobile: truncate with toggle */}
+                <p className={`text-muted-foreground leading-relaxed hidden md:block`}>{service.description}</p>
+                <div className="md:hidden">
+                  <p className={`text-muted-foreground leading-relaxed ${!expandedCards.has(index) ? 'line-clamp-2' : ''}`}>
+                    {service.description}
+                  </p>
+                  <button
+                    onClick={() => toggleCard(index)}
+                    className="text-evryware text-sm font-medium mt-2 hover:underline focus:outline-none"
+                    aria-expanded={expandedCards.has(index)}
+                  >
+                    {expandedCards.has(index) ? 'Read less' : 'Read more'}
+                  </button>
+                </div>
               </CardContent>
             </Card>
           ))}
