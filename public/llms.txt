@@ -1,0 +1,16 @@
+# Evryware Inc.
+
+> Ontario-based technology consultancy providing smart, simple digital solutions for businesses and non-profits. Digital Transformation, Product Development, Project Management, and AI Consultancy.
+
+## Pages
+
+- [Home](https://evryware.ca/): About, Services, Products, Portfolio, Testimonials, Contact.
+
+## Products
+
+- [askPreye](https://www.askpreye.com): Smart afrocentric concierge platform.
+- [EventPilot](https://eventpilot.sureguy.ca/): Multi-tenant event and visa management platform.
+
+## Elsewhere
+
+- [WIIFM Newsletter](https://wiifmco.substack.com/): Tech and lifestyle notes from Evryware's founder.
