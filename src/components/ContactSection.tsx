@@ -1,5 +1,6 @@
 import { Mail, Phone, MapPin, Instagram, Linkedin } from 'lucide-react';
 import ConsultationDialog from "./ConsultationDialog";
+import lovableCertifiedBadge from "@/assets/lovable-certified-full-on-light.png.asset.json";
 const ContactSection = () => {
   const handleEmailClick = () => {
     const email = 'hello' + '@' + 'evryware.ca';
@@ -61,9 +62,24 @@ const ContactSection = () => {
         {/* Affiliation Section */}
         <div>
           <h3 className="text-2xl font-semibold mb-6 text-white">Affiliation</h3>
-          <div className="flex justify-start">
+          <div className="flex flex-col items-start gap-4">
             <a href="https://www.hamiltonchamber.ca/member/evryware-inc/" target="_blank" rel="noopener noreferrer" aria-label="Visit Evryware's Hamilton Chamber of Commerce member page">
               <img alt="Hamilton Chamber of Commerce Member" className="max-w-32 h-auto" src="/lovable-uploads/4e32b896-c17d-448c-b6de-e2f3b7d2f162.png" />
+            </a>
+            <a
+              href="https://lovable-partner-directory.lovable.app/partners/evryware"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="View Evryware's Lovable Certified Partner profile"
+              className="inline-block transition-transform duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white/50 rounded-md"
+            >
+              <img
+                src={lovableCertifiedBadge.url}
+                alt="Lovable Certified Partner 2026"
+                className="h-14 w-auto bg-white rounded-md px-2 py-1 shadow-sm border border-gray-100"
+                width="240"
+                height="56"
+              />
             </a>
           </div>
         </div>
