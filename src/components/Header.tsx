@@ -1,6 +1,8 @@
 
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
+import lovableCertifiedBadge from "@/assets/lovable-certified-full-on-light.png.asset.json";
+
 
 interface HeaderProps {
   activeSection: string;
@@ -35,18 +37,33 @@ const Header = ({ activeSection, scrollToSection }: HeaderProps) => {
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex space-x-8">
+          <nav className="hidden md:flex items-center space-x-3 lg:space-x-6">
             {navItems.map(item => (
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className={`text-sm font-medium transition-colors hover:text-evryware pb-1 ${
+                className={`text-xs lg:text-sm font-medium transition-colors hover:text-evryware pb-1 ${
                   activeSection === item.id ? 'text-evryware border-b-2 border-evryware' : 'text-gray-600'
                 }`}
               >
                 {item.label}
               </button>
             ))}
+            <a
+              href="https://lovable-partner-directory.lovable.app/partners/evryware"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block transition-transform duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-evryware/50 rounded-md"
+              aria-label="View Evryware's Lovable Certified Partner profile"
+            >
+              <img
+                src={lovableCertifiedBadge.url}
+                alt="Lovable Certified Partner 2026"
+                className="h-8 lg:h-12 w-auto bg-white rounded-md px-1.5 lg:px-2 py-0.5 lg:py-1 shadow-sm border border-gray-100"
+                width="216"
+                height="48"
+              />
+            </a>
           </nav>
 
           {/* Mobile menu button */}
@@ -76,6 +93,24 @@ const Header = ({ activeSection, scrollToSection }: HeaderProps) => {
                   {item.label}
                 </button>
               ))}
+              <div className="pt-4 border-t border-gray-100">
+                <a
+                  href="https://lovable-partner-directory.lovable.app/partners/evryware"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center gap-3 p-3 rounded-lg bg-gradient-to-r from-pink-50 via-purple-50 to-blue-50 border border-gray-100 hover:shadow-md transition-shadow"
+                  aria-label="View Evryware's Lovable Certified Partner profile"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  <img
+                    src={lovableCertifiedBadge.url}
+                    alt="Lovable Certified Partner 2026"
+                    className="h-14 w-auto"
+                    width="240"
+                    height="56"
+                  />
+                </a>
+              </div>
             </nav>
           </div>
         )}
