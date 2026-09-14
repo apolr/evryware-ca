@@ -1,5 +1,6 @@
 import { Mail, Phone, MapPin, Instagram, Linkedin } from 'lucide-react';
 import ConsultationDialog from "./ConsultationDialog";
+import lovableCertifiedBadge from "@/assets/lovable-certified-full-on-light.png.asset.json";
 const ContactSection = () => {
   const handleEmailClick = () => {
     const email = 'hello' + '@' + 'evryware.ca';
