@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button";
 import ConsultationDialog from "./ConsultationDialog";
-import lovableCertifiedBadge from "@/assets/lovable-certified-full-on-light.png.asset.json";
 interface HeroSectionProps {
   scrollToSection: (sectionId: string) => void;
 }
