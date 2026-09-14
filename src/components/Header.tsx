@@ -105,9 +105,9 @@ const Header = ({ activeSection, scrollToSection }: HeaderProps) => {
                   <img
                     src={lovableCertifiedBadge.url}
                     alt="Lovable Certified Partner 2026"
-                    className="h-12 w-auto"
-                    width="200"
-                    height="48"
+                    className="h-14 w-auto"
+                    width="240"
+                    height="56"
                   />
                 </a>
               </div>
