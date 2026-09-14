@@ -49,6 +49,21 @@ const Header = ({ activeSection, scrollToSection }: HeaderProps) => {
               </button>
             ))}
             <a
+              href="https://www.hamiltonchamber.ca/member/evryware-inc/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block transition-transform duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-evryware/50 rounded-md"
+              aria-label="Visit Evryware's Hamilton Chamber of Commerce member page"
+            >
+              <img
+                src="/lovable-uploads/4e32b896-c17d-448c-b6de-e2f3b7d2f162.png"
+                alt="Hamilton Chamber of Commerce Member"
+                className="h-8 lg:h-12 w-auto bg-white rounded-md px-1.5 lg:px-2 py-0.5 lg:py-1 shadow-sm border border-gray-100"
+                width="180"
+                height="48"
+              />
+            </a>
+            <a
               href="https://lovable-partner-directory.lovable.app/partners/evryware"
               target="_blank"
               rel="noopener noreferrer"
