@@ -1,8 +1,9 @@
-const CACHE_NAME = 'evryware-v1';
+const CACHE_NAME = 'evryware-v2';
 const STATIC_ASSETS = [
   '/',
   '/src/main.tsx',
   '/src/index.css',
+  '/lovable-certified-full-on-light.png',
   // Critical images for LCP optimization
   '/lovable-uploads/3d982da9-686c-4030-8aac-3fb7a2770238.png',
   '/lovable-uploads/fddb7e55-e0cf-4500-b57d-da6c4b62aaa7.png',
@@ -20,6 +21,13 @@ self.addEventListener('install', (event) => {
 
 // Fetch event - serve from cache, fallback to network
 self.addEventListener('fetch', (event) => {
+  if (event.request.mode === 'navigate') {
+    event.respondWith(
+      fetch(event.request).catch(() => caches.match('/'))
+    );
+    return;
+  }
+
   event.respondWith(
     caches.match(event.request)
       .then((response) => {
