@@ -37,12 +37,12 @@ const Header = ({ activeSection, scrollToSection }: HeaderProps) => {
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-6">
+          <nav className="hidden md:flex items-center space-x-3 lg:space-x-6">
             {navItems.map(item => (
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className={`text-sm font-medium transition-colors hover:text-evryware pb-1 ${
+                className={`text-xs lg:text-sm font-medium transition-colors hover:text-evryware pb-1 ${
                   activeSection === item.id ? 'text-evryware border-b-2 border-evryware' : 'text-gray-600'
                 }`}
               >
