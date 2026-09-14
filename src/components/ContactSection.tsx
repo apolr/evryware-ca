@@ -1,6 +1,5 @@
 import { Mail, Phone, MapPin, Instagram, Linkedin } from 'lucide-react';
 import ConsultationDialog from "./ConsultationDialog";
-import lovableCertifiedBadge from "@/assets/lovable-certified-full-on-light.png.asset.json";
 const ContactSection = () => {
   const handleEmailClick = () => {
     const email = 'hello' + '@' + 'evryware.ca';
@@ -74,7 +73,7 @@ const ContactSection = () => {
               className="inline-block transition-transform duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white/50 rounded-md"
             >
               <img
-                src={lovableCertifiedBadge.url}
+                src="/lovable-certified-full-on-light.png"
                 alt="Lovable Certified Partner 2026"
                 className="h-14 w-auto bg-white rounded-md px-2 py-1 shadow-sm border border-gray-100"
                 width="240"

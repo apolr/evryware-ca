@@ -1,7 +1,6 @@
 
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
-import lovableCertifiedBadge from "@/assets/lovable-certified-full-on-light.png.asset.json";
 
 
 interface HeaderProps {
@@ -57,7 +56,7 @@ const Header = ({ activeSection, scrollToSection }: HeaderProps) => {
               aria-label="View Evryware's Lovable Certified Partner profile"
             >
               <img
-                src={lovableCertifiedBadge.url}
+                src="/lovable-certified-full-on-light.png"
                 alt="Lovable Certified Partner 2026"
                 className="h-8 lg:h-12 w-auto bg-white rounded-md px-1.5 lg:px-2 py-0.5 lg:py-1 shadow-sm border border-gray-100"
                 width="216"
@@ -103,7 +102,7 @@ const Header = ({ activeSection, scrollToSection }: HeaderProps) => {
                   onClick={() => setIsMenuOpen(false)}
                 >
                   <img
-                    src={lovableCertifiedBadge.url}
+                    src="/lovable-certified-full-on-light.png"
                     alt="Lovable Certified Partner 2026"
                     className="h-14 w-auto"
                     width="240"
