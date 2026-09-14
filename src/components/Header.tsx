@@ -93,6 +93,24 @@ const Header = ({ activeSection, scrollToSection }: HeaderProps) => {
                   {item.label}
                 </button>
               ))}
+              <div className="pt-4 border-t border-gray-100">
+                <a
+                  href="https://lovable-partner-directory.lovable.app/partners/evryware"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center gap-3 p-3 rounded-lg bg-gradient-to-r from-pink-50 via-purple-50 to-blue-50 border border-gray-100 hover:shadow-md transition-shadow"
+                  aria-label="View Evryware's Lovable Certified Partner profile"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  <img
+                    src={lovableCertifiedBadge.url}
+                    alt="Lovable Certified Partner 2026"
+                    className="h-12 w-auto"
+                    width="200"
+                    height="48"
+                  />
+                </a>
+              </div>
             </nav>
           </div>
         )}
