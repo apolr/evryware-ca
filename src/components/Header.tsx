@@ -1,6 +1,8 @@
 
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
+import lovableCertifiedBadge from "@/assets/lovable-certified-full-on-light.png.asset.json";
+
 
 interface HeaderProps {
   activeSection: string;
