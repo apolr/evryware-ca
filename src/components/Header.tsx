@@ -37,7 +37,7 @@ const Header = ({ activeSection, scrollToSection }: HeaderProps) => {
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex space-x-8">
+          <nav className="hidden md:flex items-center space-x-6">
             {navItems.map(item => (
               <button
                 key={item.id}
@@ -49,6 +49,21 @@ const Header = ({ activeSection, scrollToSection }: HeaderProps) => {
                 {item.label}
               </button>
             ))}
+            <a
+              href="https://lovable-partner-directory.lovable.app/partners/evryware"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block transition-transform duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-evryware/50 rounded-md"
+              aria-label="View Evryware's Lovable Certified Partner profile"
+            >
+              <img
+                src={lovableCertifiedBadge.url}
+                alt="Lovable Certified Partner 2026"
+                className="h-10 w-auto bg-white rounded-md px-2 py-1 shadow-sm border border-gray-100"
+                width="180"
+                height="40"
+              />
+            </a>
           </nav>
 
           {/* Mobile menu button */}
