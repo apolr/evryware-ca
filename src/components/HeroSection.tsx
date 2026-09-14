@@ -12,23 +12,8 @@ const HeroSection = ({
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
         <div className="animate-fade-in">
-          <a 
-            href="https://lovable-partner-directory.lovable.app/partners/evryware" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="inline-block mb-6 transition-transform duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white/50 rounded-lg"
-            aria-label="View Evryware's Lovable Certified Partner profile"
-          >
-            <img 
-              src={lovableCertifiedBadge.url} 
-              alt="Lovable Certified Partner 2026" 
-              className="h-16 md:h-20 w-auto bg-white/95 rounded-lg px-3 py-2 shadow-lg"
-              width="320"
-              height="80"
-            />
-          </a>
-          
           <h1 className="font-orbitron text-5xl font-semibold text-white mb-6 lowercase md:text-6xl drop-shadow-lg">smart . simple . solutions</h1>
+          
           
           
           <p className="text-lg text-white/90 mb-12 max-w-2xl mx-auto drop-shadow-md">
