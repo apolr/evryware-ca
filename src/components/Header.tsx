@@ -24,14 +24,21 @@ const Header = ({ activeSection, scrollToSection }: HeaderProps) => {
   return (
     <header className="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm border-b border-gray-100 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-between items-center h-16 md:h-20">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <button 
-              onClick={() => scrollToSection('hero')} 
-              className="font-orbitron text-2xl font-semibold text-evryware lowercase hover:text-gray-600 transition-colors"
+            <button
+              onClick={() => scrollToSection('hero')}
+              className="group text-left transition-colors"
+              aria-label="evryware — Advisory · Development · Integration · Managed Services"
             >
-              evryware
+              <span className="block font-orbitron text-2xl font-semibold text-evryware lowercase leading-tight group-hover:text-gray-600 transition-colors">
+                evryware
+              </span>
+              <span className="hidden md:block font-fira font-normal text-[11px] leading-snug tracking-wider text-[#4B5563] mt-0.5">
+                <span className="lg:hidden">Advisory · Development<br />Integration · Managed Services</span>
+                <span className="hidden lg:inline">Advisory · Development · Integration · Managed Services</span>
+              </span>
             </button>
           </div>
 
